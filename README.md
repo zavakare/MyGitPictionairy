@@ -1,4 +1,6 @@
-# Team2
+# pictionAIRy
+# The Reflections + Alex
+# Team 2
 
 Pictionary is a team game where there is a person who draws a picture based on a randomly assigned word and a teammate tries to guess what they are drawing within an allotted time frame.  Our adaptation, called pictionAIRy, will put a new twist to this classic game.  Instead of drawing on a white board, the player will draw in the air with their hand toward a webcam and motion detection will detect the hand motions of the player and draw them on the screen. 
 
