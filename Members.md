@@ -1,5 +1,5 @@
-Elizalde, Alejandro
-Lee, Mary
-Traczyk, Samantha
-Ronstadt, Theodora
-Zavala, Karen L
+* Alex Elizalde
+* Mary Lee
+* Theodora Ronstadt
+* Samantha Traczyk
+* Karen Zavala
