@@ -1,2 +1,2 @@
 # Team2
-TRP+A
+contains an overview and description of the project
