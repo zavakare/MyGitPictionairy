@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 #Camera for pictionAIRy
 #2/17/16
 #Mary/ Alex/ Sam/ Karen/ Theodora
