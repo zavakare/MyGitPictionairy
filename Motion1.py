@@ -11,13 +11,10 @@ from SimpleCV import Camera
 cam = Camera()
 
 # Loop to continuously get images
-
 while True:
 
     # Get Image from camera
-
-    img = cam.getImage()
+	 img = cam.getImage()
 
     # Show the image
-
-    img.show()
+	 img.show()
