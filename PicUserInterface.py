@@ -6,7 +6,9 @@
 #CPSC 434
 #The purpose of this file is to set up the basic UI for the PictionAIRy Project
 
+import random
 
+words=[]
 print "Welcome to pictionAIRy"
 print "Are you ready to play?"
 print "Press N for a new game."
@@ -18,6 +20,11 @@ while True:
 
         if choice == 'N':
                 print "New Game Started"
+        	with open("category1.txt") as rnd:
+			for line in rnd:
+				line=line.strip()
+				words.append(line)
+		print "Word to draw: ", words[random.randint(0,len(words)-1)]
         elif choice == 'R':
                 print "These are the Rules"
         elif choice == 'E':
