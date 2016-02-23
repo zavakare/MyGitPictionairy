@@ -19,7 +19,7 @@ playing = True
 while True:
         choice = raw_input("Enter your choice: ")
 
-        if choice == 'N':
+        if choice.lower() == 'n':
                 print "New Game Started"
 		print "Choose a category"
 		print "Animals"
@@ -29,28 +29,28 @@ while True:
         	while playing:
 			category_choice = raw_input("Enter a category : ")
 			
-			if category_choice == 'Animals':
+			if category_choice.lower() == 'animals':
 				with open("category1.txt") as rnd:
 					for line in rnd:
 						line=line.strip()
 						words.append(line)
 				print "Word to draw: ", words[random.randint(0,len(words)-1)]		
 
-			elif category_choice == 'Sports':
+			elif category_choice.lower() == 'sports':
 				with open("category2.txt") as rnd:
 					for line in rnd:
 						line=line.strip()
 						words.append(line)
 				print "Word to draw: ", words[random.randint(0,len(words)-1)]
 			
-			elif category_choice == 'Food':
+			elif category_choice.lower() == 'food':
                         	with open("category3.txt") as rnd:
                                 	for line in rnd:
                                         	line=line.strip()
                                                 words.append(line)
                                 print "Random word draw: ", words[random.randint(0,len(words)-1)]
 			
-			elif category_choice == 'Objects':
+			elif category_choice.lower() == 'objects':
                                 with open("category4.txt") as rnd:
                                 	for line in rnd:
                                         	line=line.strip()
@@ -58,9 +58,9 @@ while True:
                                 print "Random word draw: ", words[random.randint(0,len(words)-1)]
 			else:
 				print "Not a valid category"
-	elif choice == 'R':
+	elif choice.lower() == 'r':
                 print "These are the Rules"
-        elif choice == 'E':
+        elif choice.lower() == 'e':
                 print "Exit"
         else:
                 print "Not a valid choice"
