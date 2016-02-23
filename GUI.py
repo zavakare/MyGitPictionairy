@@ -14,5 +14,16 @@ title = Label(root, text='pictionAIRy')
 #can't choose where with this code need to find more exact code
 title.pack()
 
+def closewindow():
+	exit()
+
+def listrules():
+	print "Rules listed"
+
+button = Button(root, text="Exit", command=closewindow)
+button2 = Button(root, text="Rules", command=listrules)
+button.pack()
+button2.pack()
+
 #display window on screen
 root.mainloop()
