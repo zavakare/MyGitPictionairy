@@ -15,6 +15,11 @@ to install software
 keep updating this as you install packages, this way everyone has the same software and you can copy/paste these command easily on your own systems :+1:
 
 
-sudo apt-get install vim
+* **sudo apt-get install vim**
+* **sudo apt-get install ipython python-opencv python-scipy python-numpy python-setuptools python-pip**
+* **sudo pip install svgwrite**
+* **sudo pip install https://github.com/sightmachine/SimpleCV/zipball/master**
+
+
 
 
