@@ -15,17 +15,50 @@ print "Press N for a new game."
 print "Press R for rules."
 print "Press E to exit."
 
+playing = True
 while True:
         choice = raw_input("Enter your choice: ")
 
         if choice == 'N':
                 print "New Game Started"
-        	with open("category1.txt") as rnd:
-			for line in rnd:
-				line=line.strip()
-				words.append(line)
-		print "Word to draw: ", words[random.randint(0,len(words)-1)]
-        elif choice == 'R':
+		print "Choose a category"
+		print "Animals"
+		print "Sports"
+		print "Food"
+		print "Objects"
+        	while playing:
+			category_choice = raw_input("Enter a category : ")
+			
+			if category_choice == 'Animals':
+				with open("category1.txt") as rnd:
+					for line in rnd:
+						line=line.strip()
+						words.append(line)
+				print "Word to draw: ", words[random.randint(0,len(words)-1)]		
+
+			elif category_choice == 'Sports':
+				with open("category2.txt") as rnd:
+					for line in rnd:
+						line=line.strip()
+						words.append(line)
+				print "Word to draw: ", words[random.randint(0,len(words)-1)]
+			
+			elif category_choice == 'Food':
+                        	with open("category3.txt") as rnd:
+                                	for line in rnd:
+                                        	line=line.strip()
+                                                words.append(line)
+                                print "Random word draw: ", words[random.randint(0,len(words)-1)]
+			
+			elif category_choice == 'Objects':
+                                with open("category4.txt") as rnd:
+                                	for line in rnd:
+                                        	line=line.strip()
+                                                words.append(line)
+                                print "Random word draw: ", words[random.randint(0,len(words)-1)]
+			else:
+				print "Not a valid category"
+	elif choice == 'R':
                 print "These are the Rules"
         elif choice == 'E':
                 print "Exit"
