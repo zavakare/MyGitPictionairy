@@ -17,9 +17,9 @@ print "Press E to exit."
 
 playing = True
 while True:
-        choice = raw_input("Enter your choice: ")
+        choice.lower() = raw_input("Enter your choice: ")
 
-        if choice.lower() == 'n':
+        if choice == 'n':
                 print "New Game Started"
 		print "Choose a category"
 		print "Animals"
@@ -27,30 +27,30 @@ while True:
 		print "Food"
 		print "Objects"
         	while playing:
-			category_choice = raw_input("Enter a category : ")
+			category_choice.lower() = raw_input("Enter a category : ")
 			
-			if category_choice.lower() == 'animals':
+			if category_choice == 'animals':
 				with open("category1.txt") as rnd:
 					for line in rnd:
 						line=line.strip()
 						words.append(line)
 				print "Word to draw: ", words[random.randint(0,len(words)-1)]		
 
-			elif category_choice.lower() == 'sports':
+			elif category_choice == 'sports':
 				with open("category2.txt") as rnd:
 					for line in rnd:
 						line=line.strip()
 						words.append(line)
 				print "Word to draw: ", words[random.randint(0,len(words)-1)]
 			
-			elif category_choice.lower() == 'food':
+			elif category_choice == 'food':
                         	with open("category3.txt") as rnd:
                                 	for line in rnd:
                                         	line=line.strip()
                                                 words.append(line)
                                 print "Random word draw: ", words[random.randint(0,len(words)-1)]
 			
-			elif category_choice.lower() == 'objects':
+			elif category_choice == 'objects':
                                 with open("category4.txt") as rnd:
                                 	for line in rnd:
                                         	line=line.strip()
@@ -58,9 +58,9 @@ while True:
                                 print "Random word draw: ", words[random.randint(0,len(words)-1)]
 			else:
 				print "Not a valid category"
-	elif choice.lower() == 'r':
+	elif choice == 'r':
                 print "These are the Rules"
-        elif choice.lower() == 'e':
+        elif choice == 'e':
                 print "Exit"
         else:
                 print "Not a valid choice"
