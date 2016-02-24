@@ -19,7 +19,10 @@ def closewindow():
 
 def listrules():
 	print "Rules listed"
-
+	root2 = Tk()
+	title2 = Label(root2, text='maybe this works...')
+	title2.pack()
+	root2.mainloop()
 button = Button(root, text="Exit", command=closewindow)
 button2 = Button(root, text="Rules", command=listrules)
 button.pack()
