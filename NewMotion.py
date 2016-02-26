@@ -1,8 +1,7 @@
 #!/usr/bin/python
 from SimpleCV import *
 
-cam = Camera()
-
+cam = Camera(prop_set = {"width":320,"height":240})
 
 
 while True:
@@ -18,6 +17,7 @@ while True:
 	if blobs:
 
 		circles = blobs.filter([b.isCircle(0.2) for b in blobs])
+		print circles.coordinates()
 
 		if circles:
 
