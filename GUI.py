@@ -1,5 +1,5 @@
 #!/usr/bin/env python 
-
+import startGame 
 from Tkinter import *
 
 #create blank window
@@ -14,6 +14,8 @@ title = Label(root, text='pictionAIRy', font=("Helvetica", 76), fg="Black", bg =
 #can't choose where with this code need to find more exact code
 title.pack()
 
+def openGame():
+	startGame.mainStart()
 def closewindow():
 	exit()
 def rulesExit():
@@ -42,7 +44,7 @@ def listrules():
 #creates buttons
 button = Button(root, text="Exit", command=closewindow, font=("Georgia", 40))
 button2 = Button(root, text="Rules", command=listrules, font=("Georgia", 40))
-button3 = Button(root, text="Start", command=closewindow, font=("Georgia", 40))
+button3 = Button(root, text="Start", command=openGame, font=("Georgia", 40))
 button4 = Button(root, text="About Us", command=closewindow, font=("Georgia", 40))
 
 #size of buttons
