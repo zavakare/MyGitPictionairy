@@ -1,3 +1,10 @@
+# SimpleCV
+* sudo apt-get install ipython python-opencv python-scipy python-numpy python-setuptools python-pip
+* sudo pip install https://github.com/sightmachine/SimpleCV/zipball/master
+
+# ffmpeg
+* Follow directions from: http://www.jeffreythompson.org/blog/2014/11/13/installing-ffmpeg-for-raspberry-pi/
+
 # Useful software and commands:
 
 To update/grade your software:
