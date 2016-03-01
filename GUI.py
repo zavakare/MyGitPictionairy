@@ -2,26 +2,27 @@
 import startGame 
 from Tkinter import *
 
-#create blank window
+#create blank window and set minimum size
 root = Tk()
-root.minsize(1900,1080)
+root.minsize(1780, 1080)
+#change background color
 root.configure(bg =  "Purple" )
+#set window title
 root.title("The Reflections + Alex presents: pictionAIRy")
-#create text
-title = Label(root, text='pictionAIRy', font=("Helvetica", 76), fg="Black", bg = "Purple" )
 
-#put text on the screen
-#can't choose where with this code need to find more exact code
+#create title text and default place on screen
+title = Label(root, text='pictionAIRy', font=("Helvetica", 76), fg="Black", bg = "Purple" )
 title.pack()
 
+#calls method in startGame.py to start the team creation
 def openGame():
 	startGame.mainStart()
+#closes window
 def closewindow():
 	exit()
 def rulesExit():
 	rulesWin.exit()
-
-
+#Rules window
 def listrules():
 	rulesWin = Tk()
 	rulesWin.minsize(1200,800)
@@ -41,7 +42,8 @@ def listrules():
         Rule6.pack()
 	rulesButton = Button(rulesWin, text="Go BaCk", command=closewindow, font=("Georgia", 40))
 	rulesButton.pack()
-#creates buttons
+
+#creates main menu  buttons
 button = Button(root, text="Exit", command=closewindow, font=("Georgia", 40))
 button2 = Button(root, text="Rules", command=listrules, font=("Georgia", 40))
 button3 = Button(root, text="Start", command=openGame, font=("Georgia", 40))
