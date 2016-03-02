@@ -16,8 +16,9 @@ lot=[]
 while True:
 	#get image from camera
 	img = cam.getImage().flipHorizontal()
+	img = img.binarize()
 	#want to track object whose color is furthest distance from black
-	dist = img.colorDistance(Color.BLACK).dilate(2)
+	dist = img.colorDistance(Color.WHITE).dilate(2)
 
 	segmented = dist.stretch(200,255)
 	#find blobs in image
@@ -33,13 +34,10 @@ while True:
 			img.drawCircle((circles[-1].x, circles[-1].y), circles[-1].radius(),Color.BLUE,3)
 	#as long as there is more than 1 point in the list, draw lines between the points
 	if (len(lot)>1):
-		img.dl().lines(lot, color=(0,0,0), antialias=True, alpha=-1, width=5)
+		img.dl().lines(lot, color=(255,255,0), antialias=True, alpha=-1, width=5)
 	
 	#draws circles at the points in lot
 #	for (x,y) in lot:
-#		img.dl().circle((x,y), 6, Color.BLACK, width = 2, filled=True)
-
-	#img.addDrawingLayer(myDrawingLayer)
-	#img.applyLayers()
+#		img.dl().circle((x,y), 6, Color.YELLOW, width = 2, filled=True)
 	#display image (camera picture) on the screen
 	img.show()
