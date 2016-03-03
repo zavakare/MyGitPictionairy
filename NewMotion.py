@@ -16,9 +16,9 @@ lot=[]
 while True:
 	#get image from camera
 	img = cam.getImage().flipHorizontal()
-	img = img.binarize()
+
 	#want to track object whose color is furthest distance from black
-	dist = img.colorDistance(Color.WHITE).dilate(2)
+	dist = img.colorDistance(Color.BLACK).dilate(2)
 
 	segmented = dist.stretch(200,255)
 	#find blobs in image
