@@ -13,8 +13,9 @@ while True:
 	#display=SimpleCV.Display((800,600))
 	#get image from camera
 	img = cam.getImage().flipHorizontal()
+	img2=img.resize(img.width*2,img.height*2)
 	#want to track object whose color is furthest distance from black
-	dist = img.colorDistance(Color.BLUE).dilate(2)
+	dist = img2.colorDistance(Color.BLUE).dilate(2)
 
 	segmented = dist.stretch(200,255)
 	#find blobs in image
@@ -27,9 +28,14 @@ while True:
 		if circles:
 			lot.append((circles[-1].x, circles[-1].y))
 			#outline the found circle in blue on the screen
-			img.drawCircle((circles[-1].x, circles[-1].y), circles[-1].radius(),Color.BLUE,3)
+			img2.drawCircle((circles[-1].x, circles[-1].y), circles[-1].radius(),Color.BLUE,3)
 	#as long as there is more than 1 point in the list, draw lines between the points
 	if (len(lot)>1):
-		img.dl().lines(lot, color=(255,0,0), antialias=True, alpha=-1, width=5)
+		img2.dl().lines(lot, color=(255,0,0), antialias=True, alpha=-1, width=5)
+	#img2=img.resize(img.width*2,img.height*2)
+	#else:
+		#img2=img.resize(img.width*2,img.height*2)
+
+
 	#display image (camera picture) on the screen
-	img.show()
+	img2.show()
