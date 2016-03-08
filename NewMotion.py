@@ -2,23 +2,19 @@
 from SimpleCV import *
 
 #Defines camera and resolution
-cam = Camera(prop_set = {"width":320,"height":240})
 
-size = cam.getImage().size()
-disp = Display(size)
+cam = Camera(prop_set = {"width":320,"height":240})
 
 #creates array where tracked center coordinates will be stored
 lot=[]
 
-#myDrawingLayer = DrawingLayer((320,240))
-#myDrawingLayer.setDefaultColor("Black")
 
 while True:
+	#display=SimpleCV.Display((800,600))
 	#get image from camera
 	img = cam.getImage().flipHorizontal()
-
 	#want to track object whose color is furthest distance from black
-	dist = img.colorDistance(Color.BLACK).dilate(2)
+	dist = img.colorDistance(Color.BLUE).dilate(2)
 
 	segmented = dist.stretch(200,255)
 	#find blobs in image
@@ -34,10 +30,6 @@ while True:
 			img.drawCircle((circles[-1].x, circles[-1].y), circles[-1].radius(),Color.BLUE,3)
 	#as long as there is more than 1 point in the list, draw lines between the points
 	if (len(lot)>1):
-		img.dl().lines(lot, color=(255,255,0), antialias=True, alpha=-1, width=5)
-	
-	#draws circles at the points in lot
-#	for (x,y) in lot:
-#		img.dl().circle((x,y), 6, Color.YELLOW, width = 2, filled=True)
+		img.dl().lines(lot, color=(255,0,0), antialias=True, alpha=-1, width=5)
 	#display image (camera picture) on the screen
 	img.show()
