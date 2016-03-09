@@ -1,0 +1,10 @@
+lamp
+sunglasses
+chair
+star
+airplane
+cellphone
+camera
+book
+robot
+
