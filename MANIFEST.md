@@ -8,13 +8,11 @@ Contains a list of each file and its purpose
 * categoryX.txt : words for gameplay drawing
 
 # motion development branch
-* Motion1.py : early version for tracking ; bringing up camera
 * NewMotion.py : tracks circle on screen
 
 # tracking branch 
 * ** use this for current motion developments
-* Motion1.py early version for tracking ; bringing up camera
 * NewMotion.py most up-to-date version of tracking
 
 # audio development branch
-* x
+* 
