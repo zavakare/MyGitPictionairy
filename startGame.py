@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 
-
 import Tkinter
 from Tkinter import *
+import ChooseCat
 
 #stores information saved from entry boxes
 info = []
@@ -60,9 +60,15 @@ def mainStart():
 	       	for item in info:
 		        print>>outf, item
 	        outf.close
-
+		ChooseCat.select()
 	#Ready to Play button
-	Button(root, text='READY TO PLAY', command=SaveInfo).pack()
+	Button(root, text='READY TO PLAY', command = SaveInfo).pack()
+
+	#def combine_funcs(*funcs):
+		#def combined_func(*SaveInfo, **ChooseCat):
+        		#for f in funcs:
+           			#f(*SaveInfo, **ChooseCat)
+    				#return combined_func
 
 	root.mainloop()
 

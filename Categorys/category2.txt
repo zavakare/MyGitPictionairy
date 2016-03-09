@@ -1,14 +1,11 @@
-soccer
-coach
-cheerleader
-football
-hockey
-lacrosse
-surfing
-basketball
-baseball
-golf
-snowboarding
-karate
-
-
+Christmas
+Halloween
+Easter
+Valentine's Day
+St. Patrick's Day
+Hanukkah
+Fourth of July
+Birthday
+Thanksgiving
+Mardi Gras
+New Year's Eve
