@@ -3,7 +3,8 @@
 import Tkinter
 from Tkinter import *
 import random
-
+import GamePlay
+import startGame
 #stores information saved from entry boxes
 cat = []
 
@@ -13,7 +14,6 @@ def select():
         root.minsize(1780,1080)
         myvar = StringVar()
         root.title('Choose a category!')
-
 	#creates main menu  buttons
 	button = Button(root, text="Animals", command=selectCat1, font=("Georgia", 40))
 	button2 = Button(root, text="Holidays", command=selectCat2, font=("Georgia", 40))
@@ -43,7 +43,8 @@ def selectCat1() :
 	print ChosenWord
 	array.remove(ChosenWord)
 	print array
-	print ChosenWord	
+	print ChosenWord
+	GamePlay.ExampleApp()	
 def selectCat2() :
         with open("category2.txt","r") as ins:
 		array = []

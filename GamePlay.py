@@ -2,7 +2,8 @@
 # http://stackoverflow.com/questions/10596988/making-a-countdown-timer-with-python-and-tkinter
 
 import Tkinter as tk
-
+import ChooseCat
+ 
 class ExampleApp(tk.Tk):
     def __init__(self):
         tk.Tk.__init__(self)
