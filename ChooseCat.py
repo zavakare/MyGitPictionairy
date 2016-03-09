@@ -39,21 +39,34 @@ def selectCat1() :
                 array = []
                 for line in ins:
                         array.append(line)
-	print random.choice (array)
-	
+	ChosenWord=random.choice (array)
+	print ChosenWord
+	array.remove(ChosenWord)
+	print array
+	print ChosenWord	
 def selectCat2() :
         with open("category2.txt","r") as ins:
 		array = []
 		for line in ins:
 			array.append(line)
-	print  random.choice (array)
+	ChosenWord=random.choice (array)
+        print ChosenWord
+        array.remove(ChosenWord)
+        print array
+        print ChosenWord
 
+	
 def selectCat3() :
         with open("category3.txt","r") as ins:
                 array = []
                 for line in ins:
                         array.append(line)
-        print  random.choice (array)
+        ChosenWord=random.choice (array)
+        print ChosenWord
+        array.remove(ChosenWord)
+        print array
+        print ChosenWord
+
 
 
 def selectCat4() :
@@ -61,7 +74,12 @@ def selectCat4() :
                 array = []
                 for line in ins:
                         array.append(line)
-        print  random.choice (array)
+        ChosenWord=random.choice (array)
+        print ChosenWord
+        array.remove(ChosenWord)
+        print array
+        print ChosenWord
+
 
 #if__name__ == "__main__":
  #       mainStart()
