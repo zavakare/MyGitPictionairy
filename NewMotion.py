@@ -12,8 +12,8 @@ lot=[]
 while True:
 	#display=SimpleCV.Display((800,600))
 	#get image from camera
-	img = cam.getImage().flipHorizontal()
-	img2=img.resize(img.width*2,img.height*2)
+	img2 = cam.getImage().flipHorizontal()
+	#img2=img.resize(img.width*2,img.height*2)
 	#want to track object whose color is furthest distance from black
 	dist = img2.colorDistance(Color.BLUE).dilate(2)
 
