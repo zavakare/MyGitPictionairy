@@ -19,7 +19,7 @@ def select():
 	button2 = Button(root, text="Holidays", command=selectCat2, font=("Georgia", 40))
 	button3 = Button(root, text="Food", command=selectCat3, font=("Georgia", 40))
 	button4 = Button(root, text="Objects", command=selectCat4, font=("Georgia", 40))
-
+	
 	#size of buttons
 	button.config(height=3, width=7)
 	button2.config(height=3, width=7)
@@ -45,6 +45,8 @@ def selectCat1() :
 	print array
 	print ChosenWord
 	GamePlay.ExampleApp()	
+	root.destroy()
+
 def selectCat2() :
         with open("category2.txt","r") as ins:
 		array = []
@@ -55,8 +57,7 @@ def selectCat2() :
         array.remove(ChosenWord)
         print array
         print ChosenWord
-
-	
+	GamePlay.ExampleApp()	
 def selectCat3() :
         with open("category3.txt","r") as ins:
                 array = []
@@ -67,9 +68,7 @@ def selectCat3() :
         array.remove(ChosenWord)
         print array
         print ChosenWord
-
-
-
+	GamePlay.ExampleApp()
 def selectCat4() :
 	with open("category4.txt","r") as ins:
                 array = []
@@ -80,8 +79,7 @@ def selectCat4() :
         array.remove(ChosenWord)
         print array
         print ChosenWord
-
-
+	GamePlay.ExampleApp()
 #if__name__ == "__main__":
  #       mainStart()
 
