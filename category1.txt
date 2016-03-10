@@ -7,4 +7,3 @@ Bear
 Cow
 Horse
 Chicken
-

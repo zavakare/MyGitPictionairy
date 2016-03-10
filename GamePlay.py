@@ -3,7 +3,12 @@
 
 import Tkinter as tk
 import ChooseCat
- 
+#import NewMotion
+#import threading
+#from threading import Thread
+#from multiprocessing import Pool
+#p = Pool(2)
+#p.map(__init__, range(app.mainloop, NewMotion.drawFunction)) 
 class ExampleApp(tk.Tk):
     def __init__(self):
         tk.Tk.__init__(self)
@@ -12,7 +17,7 @@ class ExampleApp(tk.Tk):
         self.label.pack()
         self.remaining = 0
         self.countdown(45)
-
+	
     def countdown(self, remaining = None):
         if remaining is not None:
             self.remaining = remaining
@@ -25,5 +30,10 @@ class ExampleApp(tk.Tk):
             self.after(1000, self.countdown)
 
 if __name__ == "__main__":
-    app = ExampleApp()
-    app.mainloop()
+	app = ExampleApp()
+	#Thread(target = NewMotion.drawFunction).start()
+	#Thread(target = app.mainloop).start()
+	#NewMotion.drawFunction()
+	#p.map(__init__, range(app.mainloop, NewMotion.drawFunction))
+
+	app.mainloop()

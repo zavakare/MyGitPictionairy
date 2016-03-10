@@ -5,6 +5,9 @@ from Tkinter import *
 import random
 import GamePlay
 import startGame
+import loadArray
+import tkMessageBox as box
+
 #stores information saved from entry boxes
 cat = []
 
@@ -35,51 +38,44 @@ def select():
 	root.mainloop()
 
 def selectCat1() :
-	with open("category1.txt","r") as ins:
-                array = []
-                for line in ins:
-                        array.append(line)
-	ChosenWord=random.choice (array)
+	
+	ChosenWord=random.choice (loadArray.array)
 	print ChosenWord
-	array.remove(ChosenWord)
-	print array
+	loadArray.array.remove(ChosenWord)
+	print loadArray.array
 	print ChosenWord
-	GamePlay.ExampleApp()	
-	root.destroy()
+	root = Tk().withdraw()
+	var = box.askyesno('title',ChosenWord)
+	box.showinfo(ChosenWord)
+	GamePlay.ExampleApp()
 
 def selectCat2() :
-        with open("category2.txt","r") as ins:
-		array = []
-		for line in ins:
-			array.append(line)
-	ChosenWord=random.choice (array)
+        
+	ChosenWord=random.choice (loadArray.array2)
         print ChosenWord
-        array.remove(ChosenWord)
-        print array
+        loadArray.array2.remove(ChosenWord)
+        print loadArray.array2
         print ChosenWord
-	GamePlay.ExampleApp()	
+	GamePlay.ExampleApp()
+		
 def selectCat3() :
-        with open("category3.txt","r") as ins:
-                array = []
-                for line in ins:
-                        array.append(line)
-        ChosenWord=random.choice (array)
+        
+        ChosenWord=random.choice (loadArray.array3)
         print ChosenWord
-        array.remove(ChosenWord)
-        print array
+        loadArray.array3.remove(ChosenWord)
+        print loadArray.array3
         print ChosenWord
 	GamePlay.ExampleApp()
+	
 def selectCat4() :
-	with open("category4.txt","r") as ins:
-                array = []
-                for line in ins:
-                        array.append(line)
-        ChosenWord=random.choice (array)
+	
+        ChosenWord=random.choice (loadArray.array4)
         print ChosenWord
-        array.remove(ChosenWord)
-        print array
+        loadArray.array4.remove(ChosenWord)
+        print loadArray.array4
         print ChosenWord
 	GamePlay.ExampleApp()
+	
 #if__name__ == "__main__":
  #       mainStart()
 
