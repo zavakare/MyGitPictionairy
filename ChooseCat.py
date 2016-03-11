@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+#user chooses category and recieves drawing word
+
 import Tkinter
 from Tkinter import *
 import random
@@ -17,9 +19,10 @@ def select():
         root.minsize(1780,1080)
         myvar = StringVar()
         root.title('Choose a category!')
+	
 	#creates main menu  buttons
 	button = Button(root, text="Animals", command=selectCat1, font=("Georgia", 40))
-	button2 = Button(root, text="Holidays", command=selectCat2, font=("Georgia", 40))
+	button2 = Button(root, text="Computer", command=selectCat2, font=("Georgia", 40))
 	button3 = Button(root, text="Food", command=selectCat3, font=("Georgia", 40))
 	button4 = Button(root, text="Objects", command=selectCat4, font=("Georgia", 40))
 	
@@ -37,45 +40,50 @@ def select():
 
 	root.mainloop()
 
+
+#picks random word to draw from specific array, removes that word from array, and displays chosen word in message box
+
 def selectCat1() :
 	
+	global ChosenWord	
 	ChosenWord=random.choice (loadArray.array)
 	print ChosenWord
 	loadArray.array.remove(ChosenWord)
 	print loadArray.array
 	print ChosenWord
-	root = Tk().withdraw()
-	var = box.askyesno('title',ChosenWord)
-	box.showinfo(ChosenWord)
+	var = box.showinfo('Draw This Word',ChosenWord)
 	GamePlay.main()
 
 def selectCat2() :
         
+	global ChosenWord
 	ChosenWord=random.choice (loadArray.array2)
         print ChosenWord
         loadArray.array2.remove(ChosenWord)
         print loadArray.array2
         print ChosenWord
+	var = box.showinfo('Draw This Word',ChosenWord)
 	GamePlay.main()
 		
 def selectCat3() :
         
+	global ChosenWord
         ChosenWord=random.choice (loadArray.array3)
         print ChosenWord
         loadArray.array3.remove(ChosenWord)
         print loadArray.array3
         print ChosenWord
+	var = box.showinfo('Draw This Word',ChosenWord)
 	GamePlay.main()
 	
 def selectCat4() :
 	
+	global ChosenWord
         ChosenWord=random.choice (loadArray.array4)
         print ChosenWord
         loadArray.array4.remove(ChosenWord)
         print loadArray.array4
         print ChosenWord
+	var = box.showinfo('Draw This Word',ChosenWord)
 	GamePlay.main()
-	
-#if__name__ == "__main__":
- #       mainStart()
 

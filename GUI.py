@@ -2,11 +2,15 @@
 import startGame 
 from Tkinter import *
 
+#creates GUI interface, begins game
+
 #create blank window and set minimum size
 root = Tk()
 root.minsize(1780, 1080)
+
 #change background color
 root.configure(bg =  "Purple" )
+
 #set window title
 root.title("The Reflections + Alex presents: pictionAIRy")
 
@@ -17,11 +21,14 @@ title.pack()
 #calls method in startGame.py to start the team creation
 def openGame():
 	startGame.mainStart()
+
 #closes window
 def closewindow():
 	exit()
+
 def rulesExit():
 	rulesWin.exit()
+
 #Rules window
 def listrules():
 	rulesWin = Tk()

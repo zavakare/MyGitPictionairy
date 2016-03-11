@@ -1,10 +1,1 @@
-Dog
-Cat
-Butterfly
-Pig
-Snake
-Bear
-Cow
-Horse
-Chicken
-
+Dog Cat Butterfly Pig Snake Bear Cow Horse Chicken

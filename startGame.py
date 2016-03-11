@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+# allows users to enter team names and player names
+
 import Tkinter
 from Tkinter import *
 import ChooseCat
@@ -65,14 +67,10 @@ def mainStart():
 		loadArray.arrayThree()
 		loadArray.arrayFour()
 		ChooseCat.select()
+	
 	#Ready to Play button
 	Button(root, text='READY TO PLAY', command = SaveInfo).pack()
 	
-	#def combine_funcs(*funcs):
-		#def combined_func(*SaveInfo, **ChooseCat):
-        		#for f in funcs:
-           			#f(*SaveInfo, **ChooseCat)
-    				#return combined_func
 
 	root.mainloop()
 
