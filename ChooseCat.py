@@ -51,7 +51,6 @@ def selectCat1() :
 	loadArray.array.remove(ChosenWord)
 	print loadArray.array
 	print ChosenWord
-	root = Tk().withdraw()
 	var = box.showinfo('Draw This Word',ChosenWord)
 	GamePlay.main()
 
