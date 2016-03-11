@@ -1,39 +1,59 @@
 #!/usr/bin/env python 
-# http://stackoverflow.com/questions/10596988/making-a-countdown-timer-with-python-and-tkinter
+ 
+#creates Timer, calls motion, and checks chosen word with guess
 
-import Tkinter as tk
+from Tkinter import *
+import threading
 import ChooseCat
-#import NewMotion
-#import threading
-#from threading import Thread
-#from multiprocessing import Pool
-#p = Pool(2)
-#p.map(__init__, range(app.mainloop, NewMotion.drawFunction)) 
-class ExampleApp(tk.Tk):
-    def __init__(self):
-        tk.Tk.__init__(self)
-	self.minsize(1780, 1080)
-        self.label = tk.Label(self, text="", font=("Helvetica", 76))
-        self.label.pack()
-        self.remaining = 0
-        self.countdown(45)
-	
-    def countdown(self, remaining = None):
-        if remaining is not None:
-            self.remaining = remaining
+import NewMotion
+import tkSimpleDialog
 
-        if self.remaining <= 0:
-            self.label.configure(text="time's up!")
-        else:
-            self.label.configure(text="%d" % self.remaining)
-            self.remaining = self.remaining - 1
-            self.after(1000, self.countdown)
+# calls motion function
+def openDrawing():
+	NewMotion.drawFunction()
+
+#sets clock to 45 seconds
+sec = 45
+
+#creates timer and creates dialog that checks guess word with chosen word
+def tick():
+	global sec 
+	if (sec <=  0):
+		time['text']='stop'
+		global result
+		result = tkSimpleDialog.askstring("Ask Audience", "What is your guess?")
+		if(result == ChooseCat.ChosenWord):
+			print("Winner")
+			print(ChooseCat.ChosenWord)
+		else:
+			print("Nope")
+			print(result)
+			print(ChooseCat.ChosenWord)
+		
+	else:
+		sec = sec - 1
+		time['text'] = sec
+		# Take advantage of the after method of the Label
+		time.after(1000, tick)
+
+#combines timer and openDrawing call
+def combo():
+	t=threading.Thread(target=openDrawing)
+	t.start()
+	tick()
+
+#calls timer and creates window
+def main():
+	#create blank window and set minimum size
+	root = Tk()
+	root.minsize(1780, 1080)
+	root.title('Timer')
+
+	global time
+	time = Label(root, fg='green', font=("Helvetica", 76))
+	time.pack()
+	Button(root, fg='blue', text='Start', command=combo).pack()
+	root.mainloop()
 
 if __name__ == "__main__":
-	app = ExampleApp()
-	#Thread(target = NewMotion.drawFunction).start()
-	#Thread(target = app.mainloop).start()
-	#NewMotion.drawFunction()
-	#p.map(__init__, range(app.mainloop, NewMotion.drawFunction))
-
-	app.mainloop()
+	main()

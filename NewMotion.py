@@ -11,10 +11,8 @@ def drawFunction():
 
 
 	while True:
-	#display=SimpleCV.Display((800,600))
 	#get image from camera
 		img2 = cam.getImage().flipHorizontal()
-	#img2=img.resize(img.width*2,img.height*2)
 	#want to track object whose color is furthest distance from black
 		dist = img2.colorDistance(Color.BLUE).dilate(2)
 
@@ -33,12 +31,8 @@ def drawFunction():
 	#as long as there is more than 1 point in the list, draw lines between the points
 		if (len(lot)>1):
 			img2.dl().lines(lot, color=(255,0,0), antialias=True, alpha=-1, width=5)
-	#img2=img.resize(img.width*2,img.height*2)
-	#else:
-		#img2=img.resize(img.width*2,img.height*2)
 
-
-	#display image (camera picture) on the screen
 		img2.show()
+
 if __name__ == '__main__':
 	drawFunction()
