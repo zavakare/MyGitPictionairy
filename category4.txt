@@ -7,4 +7,3 @@ cellphone
 camera
 book
 robot
-

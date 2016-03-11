@@ -5,6 +5,9 @@ from Tkinter import *
 import random
 import GamePlay
 import startGame
+import loadArray
+import tkMessageBox as box
+
 #stores information saved from entry boxes
 cat = []
 
@@ -19,7 +22,7 @@ def select():
 	button2 = Button(root, text="Holidays", command=selectCat2, font=("Georgia", 40))
 	button3 = Button(root, text="Food", command=selectCat3, font=("Georgia", 40))
 	button4 = Button(root, text="Objects", command=selectCat4, font=("Georgia", 40))
-
+	
 	#size of buttons
 	button.config(height=3, width=7)
 	button2.config(height=3, width=7)
@@ -35,53 +38,44 @@ def select():
 	root.mainloop()
 
 def selectCat1() :
-	with open("category1.txt","r") as ins:
-                array = []
-                for line in ins:
-                        array.append(line)
-	ChosenWord=random.choice (array)
-	print ChosenWord
-	array.remove(ChosenWord)
-	print array
-	print ChosenWord
-	GamePlay.ExampleApp()	
-def selectCat2() :
-        with open("category2.txt","r") as ins:
-		array = []
-		for line in ins:
-			array.append(line)
-	ChosenWord=random.choice (array)
-        print ChosenWord
-        array.remove(ChosenWord)
-        print array
-        print ChosenWord
-
 	
+	ChosenWord=random.choice (loadArray.array)
+	print ChosenWord
+	loadArray.array.remove(ChosenWord)
+	print loadArray.array
+	print ChosenWord
+	root = Tk().withdraw()
+	var = box.askyesno('title',ChosenWord)
+	box.showinfo(ChosenWord)
+	GamePlay.main()
+
+def selectCat2() :
+        
+	ChosenWord=random.choice (loadArray.array2)
+        print ChosenWord
+        loadArray.array2.remove(ChosenWord)
+        print loadArray.array2
+        print ChosenWord
+	GamePlay.ExampleApp()
+		
 def selectCat3() :
-        with open("category3.txt","r") as ins:
-                array = []
-                for line in ins:
-                        array.append(line)
-        ChosenWord=random.choice (array)
+        
+        ChosenWord=random.choice (loadArray.array3)
         print ChosenWord
-        array.remove(ChosenWord)
-        print array
+        loadArray.array3.remove(ChosenWord)
+        print loadArray.array3
         print ChosenWord
-
-
-
+	GamePlay.ExampleApp()
+	
 def selectCat4() :
-	with open("category4.txt","r") as ins:
-                array = []
-                for line in ins:
-                        array.append(line)
-        ChosenWord=random.choice (array)
+	
+        ChosenWord=random.choice (loadArray.array4)
         print ChosenWord
-        array.remove(ChosenWord)
-        print array
+        loadArray.array4.remove(ChosenWord)
+        print loadArray.array4
         print ChosenWord
-
-
+	GamePlay.ExampleApp()
+	
 #if__name__ == "__main__":
  #       mainStart()
 

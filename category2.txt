@@ -10,5 +10,3 @@ baseball
 golf
 snowboarding
 karate
-
-
