@@ -56,7 +56,7 @@ def selectCat2() :
         loadArray.array2.remove(ChosenWord)
         print loadArray.array2
         print ChosenWord
-	GamePlay.ExampleApp()
+	GamePlay.main()
 		
 def selectCat3() :
         
@@ -65,7 +65,7 @@ def selectCat3() :
         loadArray.array3.remove(ChosenWord)
         print loadArray.array3
         print ChosenWord
-	GamePlay.ExampleApp()
+	GamePlay.main()
 	
 def selectCat4() :
 	
@@ -74,7 +74,7 @@ def selectCat4() :
         loadArray.array4.remove(ChosenWord)
         print loadArray.array4
         print ChosenWord
-	GamePlay.ExampleApp()
+	GamePlay.main()
 	
 #if__name__ == "__main__":
  #       mainStart()
