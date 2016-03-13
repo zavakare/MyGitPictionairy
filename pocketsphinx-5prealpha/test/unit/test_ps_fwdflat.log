@@ -162,8 +162,13 @@ INFO: ngram_search_fwdflat.c(950):  1046458 senones evaluated (3949/fr)
 INFO: ngram_search_fwdflat.c(952): 38208060 channels searched (144181/fr)
 INFO: ngram_search_fwdflat.c(954): 18962250 words searched (71555/fr)
 INFO: ngram_search_fwdflat.c(957): 20912232 word transitions (78914/fr)
+<<<<<<< HEAD
 INFO: ngram_search_fwdflat.c(960): fwdflat 431.92 CPU 162.989 xRT
 INFO: ngram_search_fwdflat.c(963): fwdflat 432.34 wall 163.147 xRT
+=======
+INFO: ngram_search_fwdflat.c(960): fwdflat 439.97 CPU 166.026 xRT
+INFO: ngram_search_fwdflat.c(963): fwdflat 440.69 wall 166.299 xRT
+>>>>>>> remotes/origin/AudioDevelopment
 INFO: cmn_prior.c(131): cmn_prior_update: from < 41.00 -5.30 -0.11  5.09  2.47 -4.07 -1.38 -1.79 -5.09 -2.07 -6.45 -1.43  1.15 >
 INFO: cmn_prior.c(149): cmn_prior_update: to   < 43.59 -4.53  0.28  7.00  3.61 -4.94 -2.15 -2.62 -6.08 -1.35 -7.25 -1.88  0.46 >
 INFO: ngram_search_fwdflat.c(948):     2961 words recognized (13/fr)
@@ -171,8 +176,13 @@ INFO: ngram_search_fwdflat.c(950):   872641 senones evaluated (3896/fr)
 INFO: ngram_search_fwdflat.c(952): 32020723 channels searched (142949/fr)
 INFO: ngram_search_fwdflat.c(954): 15720354 words searched (70180/fr)
 INFO: ngram_search_fwdflat.c(957): 17664499 word transitions (78859/fr)
+<<<<<<< HEAD
 INFO: ngram_search_fwdflat.c(960): fwdflat 463.47 CPU 206.906 xRT
 INFO: ngram_search_fwdflat.c(963): fwdflat 463.76 wall 207.037 xRT
+=======
+INFO: ngram_search_fwdflat.c(960): fwdflat 391.04 CPU 174.571 xRT
+INFO: ngram_search_fwdflat.c(963): fwdflat 391.58 wall 174.814 xRT
+>>>>>>> remotes/origin/AudioDevelopment
 INFO: cmn_prior.c(131): cmn_prior_update: from < 43.59 -4.53  0.28  7.00  3.61 -4.94 -2.15 -2.62 -6.08 -1.35 -7.25 -1.88  0.46 >
 INFO: cmn_prior.c(149): cmn_prior_update: to   < 43.59 -4.53  0.28  7.00  3.61 -4.94 -2.15 -2.62 -6.08 -1.35 -7.25 -1.88  0.46 >
 INFO: ngram_search_fwdflat.c(948):     2703 words recognized (12/fr)
@@ -180,6 +190,7 @@ INFO: ngram_search_fwdflat.c(950):   866333 senones evaluated (3868/fr)
 INFO: ngram_search_fwdflat.c(952): 30920289 channels searched (138037/fr)
 INFO: ngram_search_fwdflat.c(954): 15684533 words searched (70020/fr)
 INFO: ngram_search_fwdflat.c(957): 17664499 word transitions (78859/fr)
+<<<<<<< HEAD
 INFO: ngram_search_fwdflat.c(960): fwdflat 359.77 CPU 160.612 xRT
 INFO: ngram_search_fwdflat.c(963): fwdflat 360.17 wall 160.789 xRT
 INFO: ngram_search_fwdflat.c(176): TOTAL fwdflat 1255.16 CPU 176.783 xRT
@@ -190,6 +201,18 @@ FWDFLAT: go forward ten meters (-7917, 0)
 FWDFLAT: go forward ten meters (-7334, 0)
 2.23 seconds speech, 463.48 seconds CPU, 463.76 seconds wall
 207.84 xRT (CPU), 207.97 xRT (elapsed)
+=======
+INFO: ngram_search_fwdflat.c(960): fwdflat 365.43 CPU 163.138 xRT
+INFO: ngram_search_fwdflat.c(963): fwdflat 365.98 wall 163.382 xRT
+INFO: ngram_search_fwdflat.c(176): TOTAL fwdflat 1196.44 CPU 168.513 xRT
+INFO: ngram_search_fwdflat.c(179): TOTAL fwdflat 1198.25 wall 168.768 xRT
+FWDFLAT: go forward ten meters (-7917, 0)
+2.64 seconds speech, 439.97 seconds CPU, 440.69 seconds wall
+166.66 xRT (CPU), 166.93 xRT (elapsed)
+FWDFLAT: go forward ten meters (-7334, 0)
+2.23 seconds speech, 391.04 seconds CPU, 391.58 seconds wall
+175.35 xRT (CPU), 175.60 xRT (elapsed)
+>>>>>>> remotes/origin/AudioDevelopment
 FWDFLAT: go forward ten meters (-7158, 0)
 <s> (318:325) P(w|o) = 1.000000 ascr = -123 lscr = 0 lback = 0
 go (326:343) P(w|o) = 1.000000 ascr = -413 lscr = -424 lback = 2
@@ -197,7 +220,14 @@ forward (344:396) P(w|o) = 1.000000 ascr = -1152 lscr = -414 lback = 2
 ten (397:432) P(w|o) = 1.000000 ascr = -1160 lscr = -610 lback = 1
 meters (433:491) P(w|o) = 1.000000 ascr = -1929 lscr = -431 lback = 2
 </s> (492:539) P(w|o) = 1.000000 ascr = -367 lscr = -135 lback = 2
+<<<<<<< HEAD
 2.23 seconds speech, 359.77 seconds CPU, 360.17 seconds wall
 161.33 xRT (CPU), 161.51 xRT (elapsed)
 TOTAL: 7.10 seconds speech, 1255.17 seconds CPU, 1256.27 seconds wall
 TOTAL: 176.78 xRT (CPU), 176.94 xRT (elapsed)
+=======
+2.23 seconds speech, 365.43 seconds CPU, 365.98 seconds wall
+163.87 xRT (CPU), 164.12 xRT (elapsed)
+TOTAL: 7.10 seconds speech, 1196.44 seconds CPU, 1198.25 seconds wall
+TOTAL: 168.51 xRT (CPU), 168.77 xRT (elapsed)
+>>>>>>> remotes/origin/AudioDevelopment

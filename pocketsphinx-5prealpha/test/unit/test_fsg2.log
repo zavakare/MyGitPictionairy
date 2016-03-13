@@ -170,8 +170,13 @@ INFO: fsg_lextree.c(259): Allocated 11520 bytes (11 KiB) for all lextree nodes
 INFO: fsg_lextree.c(262): Allocated 6840 bytes (6 KiB) for lextree leafnodes
 INFO: fsg_search.c(859): 250 frames, 4078 HMMs (16/fr), 11346 senones (45/fr), 1119 history entries (4/fr)
 
+<<<<<<< HEAD
 INFO: fsg_search.c(869): fsg 0.76 CPU 0.303 xRT
 INFO: fsg_search.c(871): fsg 0.76 wall 0.303 xRT
+=======
+INFO: fsg_search.c(869): fsg 0.75 CPU 0.299 xRT
+INFO: fsg_search.c(871): fsg 1.06 wall 0.421 xRT
+>>>>>>> remotes/origin/AudioDevelopment
 FSG: go forward eight meters (-8576)
 INFO: cmn_prior.c(131): cmn_prior_update: from < 40.00  3.00 -1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00 >
 INFO: cmn_prior.c(149): cmn_prior_update: to   < 54.52 -3.03 -3.44  8.18  5.47 -5.38 -2.03 -4.47 -3.35  2.86 -5.86  2.91 -0.36 >
@@ -196,5 +201,10 @@ eight 127 P(w|o) = -247509 + -321771 - -561936 = -7344 = 0.479752
 forward 118 P(w|o) = -200883 + -368397 - -561936 = -7344 = 0.479752
 go 63 P(w|o) = -60756 + -501204 - -561936 = -24 = 0.997603
 <sil> 42 P(w|o) = -38570 + -523365 - -561936 = 1 = 1.000100
+<<<<<<< HEAD
 INFO: fsg_search.c(265): TOTAL fsg 0.76 CPU 0.304 xRT
 INFO: fsg_search.c(268): TOTAL fsg 0.76 wall 0.305 xRT
+=======
+INFO: fsg_search.c(265): TOTAL fsg 0.75 CPU 0.300 xRT
+INFO: fsg_search.c(268): TOTAL fsg 1.06 wall 0.422 xRT
+>>>>>>> remotes/origin/AudioDevelopment

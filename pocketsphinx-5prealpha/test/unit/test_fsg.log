@@ -212,8 +212,13 @@ FSG: 258 go forward ten meters (-3278) FINAL
 FSG: 261 go forward ten meters (-3246) FINAL
 INFO: fsg_search.c(859): 261 frames, 2520 HMMs (9/fr), 9440 senones (36/fr), 720 history entries (2/fr)
 
+<<<<<<< HEAD
 INFO: fsg_search.c(869): fsg 0.82 CPU 0.313 xRT
 INFO: fsg_search.c(871): fsg 0.82 wall 0.312 xRT
+=======
+INFO: fsg_search.c(869): fsg 0.80 CPU 0.305 xRT
+INFO: fsg_search.c(871): fsg 0.80 wall 0.305 xRT
+>>>>>>> remotes/origin/AudioDevelopment
 FSG: go forward ten meters (-3246)
 INFO: cmn_prior.c(131): cmn_prior_update: from < 40.00  3.00 -1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00 >
 INFO: cmn_prior.c(149): cmn_prior_update: to   < 41.00 -5.30 -0.11  5.09  2.47 -4.07 -1.38 -1.79 -5.09 -2.07 -6.45 -1.43  1.15 >
@@ -231,5 +236,10 @@ INFO: ps_lattice.c(1380): Bestpath score: -2682
 INFO: ps_lattice.c(1384): Normalizer P(O) = alpha(<sil>:212:260) = -536870912
 BESTPATH: go forward ten meters
 INFO: ps_lattice.c(1441): Joint P(O,S) = -41195520 P(S|O) = 495675392
+<<<<<<< HEAD
 INFO: fsg_search.c(265): TOTAL fsg 0.82 CPU 0.314 xRT
 INFO: fsg_search.c(268): TOTAL fsg 0.82 wall 0.313 xRT
+=======
+INFO: fsg_search.c(265): TOTAL fsg 0.80 CPU 0.307 xRT
+INFO: fsg_search.c(268): TOTAL fsg 0.80 wall 0.306 xRT
+>>>>>>> remotes/origin/AudioDevelopment

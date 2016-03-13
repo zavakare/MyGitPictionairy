@@ -166,8 +166,13 @@ INFO: ngram_search_fwdtree.c(1555):   661976 senones evaluated (2498/fr)
 INFO: ngram_search_fwdtree.c(1559):  1533547 channels searched (5786/fr), 149474 1st, 124567 last
 INFO: ngram_search_fwdtree.c(1562):     6748 words for which last channels evaluated (25/fr)
 INFO: ngram_search_fwdtree.c(1564):    55300 candidate words for entering last phone (208/fr)
+<<<<<<< HEAD
 INFO: ngram_search_fwdtree.c(1567): fwdtree 6.36 CPU 2.400 xRT
 INFO: ngram_search_fwdtree.c(1570): fwdtree 6.40 wall 2.415 xRT
+=======
+INFO: ngram_search_fwdtree.c(1567): fwdtree 6.28 CPU 2.370 xRT
+INFO: ngram_search_fwdtree.c(1570): fwdtree 6.28 wall 2.372 xRT
+>>>>>>> remotes/origin/AudioDevelopment
 INFO: ngram_search.c(1253): lattice start node <s>.0 end node </s>.212
 INFO: ngram_search.c(1279): Eliminated 2 nodes before end node
 INFO: ngram_search.c(1384): Lattice has 577 nodes, 1174 links
@@ -291,8 +296,13 @@ INFO: ps_lattice.c(423): Reading DAG file: goforward.lat
 INFO: ps_lattice.c(1380): Bestpath score: -2147483648
 INFO: ps_lattice.c(1384): Normalizer P(O) = alpha(</s>:212:263) = -536870912
 INFO: ps_lattice.c(1441): Joint P(O,S) = 0 P(S|O) = 536870912
+<<<<<<< HEAD
 INFO: ngram_search_fwdtree.c(432): TOTAL fwdtree 6.36 CPU 2.409 xRT
 INFO: ngram_search_fwdtree.c(435): TOTAL fwdtree 6.40 wall 2.424 xRT
+=======
+INFO: ngram_search_fwdtree.c(432): TOTAL fwdtree 6.28 CPU 2.379 xRT
+INFO: ngram_search_fwdtree.c(435): TOTAL fwdtree 6.28 wall 2.381 xRT
+>>>>>>> remotes/origin/AudioDevelopment
 INFO: dict.c(320): Allocating 4096 * 20 bytes (80 KiB) for word entries
 INFO: ps_lattice.c(423): Reading DAG file: goforward.lat
 INFO: dict.c(320): Allocating 4096 * 20 bytes (80 KiB) for word entries

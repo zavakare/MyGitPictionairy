@@ -167,7 +167,11 @@ INFO: ngram_search_fwdtree.c(1559):  1533547 channels searched (5786/fr), 149474
 INFO: ngram_search_fwdtree.c(1562):     6748 words for which last channels evaluated (25/fr)
 INFO: ngram_search_fwdtree.c(1564):    55300 candidate words for entering last phone (208/fr)
 INFO: ngram_search_fwdtree.c(1567): fwdtree 6.35 CPU 2.396 xRT
+<<<<<<< HEAD
 INFO: ngram_search_fwdtree.c(1570): fwdtree 6.36 wall 2.399 xRT
+=======
+INFO: ngram_search_fwdtree.c(1570): fwdtree 6.36 wall 2.398 xRT
+>>>>>>> remotes/origin/AudioDevelopment
 INFO: ngram_search.c(1253): lattice start node <s>.0 end node </s>.212
 INFO: ngram_search.c(1279): Eliminated 2 nodes before end node
 INFO: ngram_search.c(1384): Lattice has 577 nodes, 1174 links
@@ -183,15 +187,24 @@ INFO: ngram_search_fwdtree.c(1555):   532389 senones evaluated (2377/fr)
 INFO: ngram_search_fwdtree.c(1559):  1140535 channels searched (5091/fr), 119973 1st, 118075 last
 INFO: ngram_search_fwdtree.c(1562):     6022 words for which last channels evaluated (26/fr)
 INFO: ngram_search_fwdtree.c(1564):    40661 candidate words for entering last phone (181/fr)
+<<<<<<< HEAD
 INFO: ngram_search_fwdtree.c(1567): fwdtree 4.93 CPU 2.201 xRT
 INFO: ngram_search_fwdtree.c(1570): fwdtree 4.93 wall 2.201 xRT
+=======
+INFO: ngram_search_fwdtree.c(1567): fwdtree 4.95 CPU 2.210 xRT
+INFO: ngram_search_fwdtree.c(1570): fwdtree 4.98 wall 2.223 xRT
+>>>>>>> remotes/origin/AudioDevelopment
 INFO: ngram_search.c(1253): lattice start node <s>.0 end node </s>.174
 INFO: ngram_search.c(1279): Eliminated 2 nodes before end node
 INFO: ngram_search.c(1384): Lattice has 436 nodes, 425 links
 INFO: ps_lattice.c(1380): Bestpath score: -7709
 INFO: ps_lattice.c(1384): Normalizer P(O) = alpha(</s>:174:222) = -539422
 INFO: ps_lattice.c(1441): Joint P(O,S) = -555756 P(S|O) = -16334
+<<<<<<< HEAD
 INFO: ngram_search.c(875): bestpath 0.00 CPU 0.000 xRT
+=======
+INFO: ngram_search.c(875): bestpath 0.01 CPU 0.004 xRT
+>>>>>>> remotes/origin/AudioDevelopment
 INFO: ngram_search.c(878): bestpath 0.01 wall 0.004 xRT
 INFO: cmn_prior.c(131): cmn_prior_update: from < 43.59 -4.53  0.28  7.00  3.61 -4.94 -2.15 -2.62 -6.08 -1.35 -7.25 -1.88  0.46 >
 INFO: cmn_prior.c(149): cmn_prior_update: to   < 43.59 -4.53  0.28  7.00  3.61 -4.94 -2.15 -2.62 -6.08 -1.35 -7.25 -1.88  0.46 >
@@ -200,8 +213,13 @@ INFO: ngram_search_fwdtree.c(1555):   510823 senones evaluated (2280/fr)
 INFO: ngram_search_fwdtree.c(1559):  1048922 channels searched (4682/fr), 119232 1st, 113463 last
 INFO: ngram_search_fwdtree.c(1562):     5766 words for which last channels evaluated (25/fr)
 INFO: ngram_search_fwdtree.c(1564):    36040 candidate words for entering last phone (160/fr)
+<<<<<<< HEAD
 INFO: ngram_search_fwdtree.c(1567): fwdtree 4.65 CPU 2.076 xRT
 INFO: ngram_search_fwdtree.c(1570): fwdtree 4.67 wall 2.085 xRT
+=======
+INFO: ngram_search_fwdtree.c(1567): fwdtree 5.44 CPU 2.429 xRT
+INFO: ngram_search_fwdtree.c(1570): fwdtree 5.46 wall 2.438 xRT
+>>>>>>> remotes/origin/AudioDevelopment
 INFO: ngram_search.c(1253): lattice start node <s>.0 end node </s>.174
 INFO: ngram_search.c(1279): Eliminated 2 nodes before end node
 INFO: ngram_search.c(1384): Lattice has 433 nodes, 440 links
@@ -212,6 +230,7 @@ INFO: ngram_search.c(875): bestpath 0.01 CPU 0.004 xRT
 INFO: ngram_search.c(878): bestpath 0.01 wall 0.004 xRT
 INFO: ngram_search.c(1030): bestpath 0.00 CPU 0.000 xRT
 INFO: ngram_search.c(1033): bestpath 0.00 wall 0.000 xRT
+<<<<<<< HEAD
 INFO: ngram_search_fwdtree.c(432): TOTAL fwdtree 15.93 CPU 2.244 xRT
 INFO: ngram_search_fwdtree.c(435): TOTAL fwdtree 15.96 wall 2.248 xRT
 INFO: ngram_search.c(303): TOTAL bestpath 0.03 CPU 0.004 xRT
@@ -222,6 +241,18 @@ BESTPATH: go forward ten meters (-8632, -25901)
 BESTPATH: go forward ten meters (-8077, -16334)
 2.23 seconds speech, 4.93 seconds CPU, 4.94 seconds wall
 2.21 xRT (CPU), 2.22 xRT (elapsed)
+=======
+INFO: ngram_search_fwdtree.c(432): TOTAL fwdtree 16.74 CPU 2.358 xRT
+INFO: ngram_search_fwdtree.c(435): TOTAL fwdtree 16.80 wall 2.366 xRT
+INFO: ngram_search.c(303): TOTAL bestpath 0.04 CPU 0.006 xRT
+INFO: ngram_search.c(306): TOTAL bestpath 0.04 wall 0.005 xRT
+BESTPATH: go forward ten meters (-8632, -25901)
+2.64 seconds speech, 6.37 seconds CPU, 6.37 seconds wall
+2.41 xRT (CPU), 2.41 xRT (elapsed)
+BESTPATH: go forward ten meters (-8077, -16334)
+2.23 seconds speech, 4.96 seconds CPU, 4.99 seconds wall
+2.22 xRT (CPU), 2.24 xRT (elapsed)
+>>>>>>> remotes/origin/AudioDevelopment
 BESTPATH: go forward ten meters (-7959, -12618)
 <s> (318:325) P(w|o) = 0.999700 ascr = -125952 lscr = 0 lback = 1
 go (326:343) P(w|o) = 0.998301 ascr = -422912 lscr = -424 lback = 2
@@ -229,7 +260,14 @@ forward (344:396) P(w|o) = 0.999300 ascr = -1145856 lscr = -414 lback = 2
 ten (397:432) P(w|o) = 0.698904 ascr = -1128448 lscr = -610 lback = 1
 meters (433:491) P(w|o) = 1.000000 ascr = -1953792 lscr = -431 lback = 2
 </s> (492:540) P(w|o) = 1.000000 ascr = -1953792 lscr = -135 lback = 2
+<<<<<<< HEAD
 2.23 seconds speech, 4.66 seconds CPU, 4.68 seconds wall
 2.09 xRT (CPU), 2.10 xRT (elapsed)
 TOTAL: 7.10 seconds speech, 15.96 seconds CPU, 16.00 seconds wall
 TOTAL: 2.25 xRT (CPU), 2.25 xRT (elapsed)
+=======
+2.23 seconds speech, 5.45 seconds CPU, 5.47 seconds wall
+2.44 xRT (CPU), 2.45 xRT (elapsed)
+TOTAL: 7.10 seconds speech, 16.78 seconds CPU, 16.84 seconds wall
+TOTAL: 2.36 xRT (CPU), 2.37 xRT (elapsed)
+>>>>>>> remotes/origin/AudioDevelopment

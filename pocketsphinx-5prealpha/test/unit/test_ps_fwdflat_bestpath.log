@@ -162,15 +162,24 @@ INFO: ngram_search_fwdflat.c(950):   909189 senones evaluated (3431/fr)
 INFO: ngram_search_fwdflat.c(952): 21023386 channels searched (79333/fr)
 INFO: ngram_search_fwdflat.c(954): 13974240 words searched (52732/fr)
 INFO: ngram_search_fwdflat.c(957): 20912232 word transitions (78914/fr)
+<<<<<<< HEAD
 INFO: ngram_search_fwdflat.c(960): fwdflat 320.83 CPU 121.068 xRT
 INFO: ngram_search_fwdflat.c(963): fwdflat 321.46 wall 121.306 xRT
+=======
+INFO: ngram_search_fwdflat.c(960): fwdflat 325.49 CPU 122.826 xRT
+INFO: ngram_search_fwdflat.c(963): fwdflat 325.61 wall 122.871 xRT
+>>>>>>> remotes/origin/AudioDevelopment
 INFO: ngram_search.c(1253): lattice start node <s>.0 end node </s>.212
 INFO: ngram_search.c(1279): Eliminated 2 nodes before end node
 INFO: ngram_search.c(1384): Lattice has 577 nodes, 944 links
 INFO: ps_lattice.c(1380): Bestpath score: -8386
 INFO: ps_lattice.c(1384): Normalizer P(O) = alpha(</s>:212:263) = -548644
 INFO: ps_lattice.c(1441): Joint P(O,S) = -592826 P(S|O) = -44182
+<<<<<<< HEAD
 INFO: ngram_search.c(875): bestpath 0.01 CPU 0.004 xRT
+=======
+INFO: ngram_search.c(875): bestpath 0.02 CPU 0.008 xRT
+>>>>>>> remotes/origin/AudioDevelopment
 INFO: ngram_search.c(878): bestpath 0.01 wall 0.005 xRT
 INFO: cmn_prior.c(131): cmn_prior_update: from < 41.00 -5.30 -0.11  5.09  2.47 -4.07 -1.38 -1.79 -5.09 -2.07 -6.45 -1.43  1.15 >
 INFO: cmn_prior.c(149): cmn_prior_update: to   < 43.59 -4.53  0.28  7.00  3.61 -4.94 -2.15 -2.62 -6.08 -1.35 -7.25 -1.88  0.46 >
@@ -179,8 +188,13 @@ INFO: ngram_search_fwdflat.c(950):   762893 senones evaluated (3406/fr)
 INFO: ngram_search_fwdflat.c(952): 17273279 channels searched (77112/fr)
 INFO: ngram_search_fwdflat.c(954): 10884805 words searched (48592/fr)
 INFO: ngram_search_fwdflat.c(957): 17664499 word transitions (78859/fr)
+<<<<<<< HEAD
 INFO: ngram_search_fwdflat.c(960): fwdflat 284.46 CPU 126.991 xRT
 INFO: ngram_search_fwdflat.c(963): fwdflat 284.99 wall 127.229 xRT
+=======
+INFO: ngram_search_fwdflat.c(960): fwdflat 293.59 CPU 131.067 xRT
+INFO: ngram_search_fwdflat.c(963): fwdflat 293.74 wall 131.135 xRT
+>>>>>>> remotes/origin/AudioDevelopment
 INFO: ngram_search.c(1253): lattice start node <s>.0 end node </s>.174
 INFO: ngram_search.c(1279): Eliminated 2 nodes before end node
 INFO: ngram_search.c(1384): Lattice has 482 nodes, 528 links
@@ -188,7 +202,11 @@ INFO: ps_lattice.c(1380): Bestpath score: -7844
 INFO: ps_lattice.c(1384): Normalizer P(O) = alpha(</s>:174:222) = -528695
 INFO: ps_lattice.c(1441): Joint P(O,S) = -563386 P(S|O) = -34691
 INFO: ngram_search.c(875): bestpath 0.01 CPU 0.004 xRT
+<<<<<<< HEAD
 INFO: ngram_search.c(878): bestpath 0.01 wall 0.004 xRT
+=======
+INFO: ngram_search.c(878): bestpath 0.01 wall 0.007 xRT
+>>>>>>> remotes/origin/AudioDevelopment
 INFO: cmn_prior.c(131): cmn_prior_update: from < 43.59 -4.53  0.28  7.00  3.61 -4.94 -2.15 -2.62 -6.08 -1.35 -7.25 -1.88  0.46 >
 INFO: cmn_prior.c(149): cmn_prior_update: to   < 43.59 -4.53  0.28  7.00  3.61 -4.94 -2.15 -2.62 -6.08 -1.35 -7.25 -1.88  0.46 >
 INFO: ngram_search_fwdflat.c(948):     2194 words recognized (10/fr)
@@ -196,8 +214,13 @@ INFO: ngram_search_fwdflat.c(950):   749945 senones evaluated (3348/fr)
 INFO: ngram_search_fwdflat.c(952): 16629004 channels searched (74236/fr)
 INFO: ngram_search_fwdflat.c(954): 10814907 words searched (48280/fr)
 INFO: ngram_search_fwdflat.c(957): 17664499 word transitions (78859/fr)
+<<<<<<< HEAD
 INFO: ngram_search_fwdflat.c(960): fwdflat 258.49 CPU 115.397 xRT
 INFO: ngram_search_fwdflat.c(963): fwdflat 258.61 wall 115.450 xRT
+=======
+INFO: ngram_search_fwdflat.c(960): fwdflat 267.51 CPU 119.424 xRT
+INFO: ngram_search_fwdflat.c(963): fwdflat 267.68 wall 119.500 xRT
+>>>>>>> remotes/origin/AudioDevelopment
 INFO: ngram_search.c(1253): lattice start node <s>.0 end node </s>.174
 INFO: ngram_search.c(1279): Eliminated 2 nodes before end node
 INFO: ngram_search.c(1384): Lattice has 453 nodes, 466 links
@@ -208,6 +231,7 @@ INFO: ngram_search.c(875): bestpath 0.01 CPU 0.004 xRT
 INFO: ngram_search.c(878): bestpath 0.01 wall 0.004 xRT
 INFO: ngram_search.c(1030): bestpath 0.00 CPU 0.000 xRT
 INFO: ngram_search.c(1033): bestpath 0.00 wall 0.000 xRT
+<<<<<<< HEAD
 INFO: ngram_search_fwdflat.c(176): TOTAL fwdflat 863.78 CPU 121.659 xRT
 INFO: ngram_search_fwdflat.c(179): TOTAL fwdflat 865.06 wall 121.839 xRT
 INFO: ngram_search.c(303): TOTAL bestpath 0.03 CPU 0.004 xRT
@@ -218,6 +242,18 @@ BESTPATH: go forward ten meters (-8801, -44182)
 BESTPATH: go forward ten meters (-8226, -34691)
 2.23 seconds speech, 284.47 seconds CPU, 285.00 seconds wall
 127.57 xRT (CPU), 127.80 xRT (elapsed)
+=======
+INFO: ngram_search_fwdflat.c(176): TOTAL fwdflat 886.59 CPU 124.872 xRT
+INFO: ngram_search_fwdflat.c(179): TOTAL fwdflat 887.03 wall 124.934 xRT
+INFO: ngram_search.c(303): TOTAL bestpath 0.04 CPU 0.006 xRT
+INFO: ngram_search.c(306): TOTAL bestpath 0.04 wall 0.005 xRT
+BESTPATH: go forward ten meters (-8801, -44182)
+2.64 seconds speech, 325.51 seconds CPU, 325.62 seconds wall
+123.30 xRT (CPU), 123.34 xRT (elapsed)
+BESTPATH: go forward ten meters (-8226, -34691)
+2.23 seconds speech, 293.60 seconds CPU, 293.76 seconds wall
+131.66 xRT (CPU), 131.73 xRT (elapsed)
+>>>>>>> remotes/origin/AudioDevelopment
 BESTPATH: go forward ten meters (-8044, -31012)
 <s> (318:325) P(w|o) = 1.000100 ascr = -125952 lscr = 0 lback = 1
 go (326:343) P(w|o) = 0.998701 ascr = -422912 lscr = -424 lback = 2
@@ -225,7 +261,14 @@ forward (344:396) P(w|o) = 1.000000 ascr = -1156096 lscr = -414 lback = 2
 ten (397:432) P(w|o) = 0.119774 ascr = -1187840 lscr = -610 lback = 1
 meters (433:491) P(w|o) = 0.917493 ascr = -1973248 lscr = -431 lback = 2
 </s> (492:540) P(w|o) = 1.000000 ascr = -1973248 lscr = -135 lback = 2
+<<<<<<< HEAD
 2.23 seconds speech, 258.50 seconds CPU, 258.62 seconds wall
 115.92 xRT (CPU), 115.97 xRT (elapsed)
 TOTAL: 7.10 seconds speech, 863.82 seconds CPU, 865.09 seconds wall
 TOTAL: 121.66 xRT (CPU), 121.84 xRT (elapsed)
+=======
+2.23 seconds speech, 267.52 seconds CPU, 267.69 seconds wall
+119.96 xRT (CPU), 120.04 xRT (elapsed)
+TOTAL: 7.10 seconds speech, 886.63 seconds CPU, 887.07 seconds wall
+TOTAL: 124.88 xRT (CPU), 124.94 xRT (elapsed)
+>>>>>>> remotes/origin/AudioDevelopment

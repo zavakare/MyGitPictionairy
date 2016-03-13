@@ -161,6 +161,7 @@ INFO: ngram_search_fwdflat.c(950):   922536 senones evaluated (3521/fr)
 INFO: ngram_search_fwdflat.c(952): 21542091 channels searched (82221/fr)
 INFO: ngram_search_fwdflat.c(954): 13564927 words searched (51774/fr)
 INFO: ngram_search_fwdflat.c(957): 20674593 word transitions (78910/fr)
+<<<<<<< HEAD
 INFO: ngram_search_fwdflat.c(960): fwdflat 372.56 CPU 142.198 xRT
 INFO: ngram_search_fwdflat.c(963): fwdflat 372.93 wall 142.338 xRT
 go forward ten meters
@@ -169,3 +170,13 @@ INFO: cmn_prior.c(149): cmn_prior_update: to   < 41.00 -5.30 -0.11  5.09  2.47 -
 2 * fwdflat search in 372.57 sec
 INFO: ngram_search_fwdflat.c(176): TOTAL fwdflat 372.56 CPU inf xRT
 INFO: ngram_search_fwdflat.c(179): TOTAL fwdflat 372.93 wall inf xRT
+=======
+INFO: ngram_search_fwdflat.c(960): fwdflat 361.93 CPU 138.141 xRT
+INFO: ngram_search_fwdflat.c(963): fwdflat 362.10 wall 138.208 xRT
+go forward ten meters
+INFO: cmn_prior.c(131): cmn_prior_update: from < 40.00  3.00 -1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00 >
+INFO: cmn_prior.c(149): cmn_prior_update: to   < 41.00 -5.30 -0.11  5.09  2.47 -4.07 -1.38 -1.79 -5.09 -2.07 -6.45 -1.43  1.15 >
+2 * fwdflat search in 361.92 sec
+INFO: ngram_search_fwdflat.c(176): TOTAL fwdflat 361.93 CPU inf xRT
+INFO: ngram_search_fwdflat.c(179): TOTAL fwdflat 362.10 wall inf xRT
+>>>>>>> remotes/origin/AudioDevelopment

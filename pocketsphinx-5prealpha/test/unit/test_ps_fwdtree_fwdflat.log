@@ -167,16 +167,26 @@ INFO: ngram_search_fwdtree.c(1555):   661976 senones evaluated (2498/fr)
 INFO: ngram_search_fwdtree.c(1559):  1533547 channels searched (5786/fr), 149474 1st, 124567 last
 INFO: ngram_search_fwdtree.c(1562):     6748 words for which last channels evaluated (25/fr)
 INFO: ngram_search_fwdtree.c(1564):    55300 candidate words for entering last phone (208/fr)
+<<<<<<< HEAD
 INFO: ngram_search_fwdtree.c(1567): fwdtree 6.37 CPU 2.404 xRT
 INFO: ngram_search_fwdtree.c(1570): fwdtree 6.40 wall 2.414 xRT
+=======
+INFO: ngram_search_fwdtree.c(1567): fwdtree 6.99 CPU 2.638 xRT
+INFO: ngram_search_fwdtree.c(1570): fwdtree 7.00 wall 2.641 xRT
+>>>>>>> remotes/origin/AudioDevelopment
 INFO: ngram_search_fwdflat.c(302): Utterance vocabulary contains 147 words
 INFO: ngram_search_fwdflat.c(948):     2636 words recognized (10/fr)
 INFO: ngram_search_fwdflat.c(950):    98974 senones evaluated (373/fr)
 INFO: ngram_search_fwdflat.c(952):   199488 channels searched (752/fr)
 INFO: ngram_search_fwdflat.c(954):    10913 words searched (41/fr)
 INFO: ngram_search_fwdflat.c(957):     7627 word transitions (28/fr)
+<<<<<<< HEAD
 INFO: ngram_search_fwdflat.c(960): fwdflat 1.45 CPU 0.547 xRT
 INFO: ngram_search_fwdflat.c(963): fwdflat 1.45 wall 0.549 xRT
+=======
+INFO: ngram_search_fwdflat.c(960): fwdflat 1.43 CPU 0.540 xRT
+INFO: ngram_search_fwdflat.c(963): fwdflat 1.44 wall 0.542 xRT
+>>>>>>> remotes/origin/AudioDevelopment
 INFO: cmn_prior.c(131): cmn_prior_update: from < 41.00 -5.30 -0.11  5.09  2.47 -4.07 -1.38 -1.79 -5.09 -2.07 -6.45 -1.43  1.15 >
 INFO: cmn_prior.c(149): cmn_prior_update: to   < 43.59 -4.53  0.28  7.00  3.61 -4.94 -2.15 -2.62 -6.08 -1.35 -7.25 -1.88  0.46 >
 INFO: ngram_search_fwdtree.c(1553):     2622 words recognized (12/fr)
@@ -184,16 +194,26 @@ INFO: ngram_search_fwdtree.c(1555):   532390 senones evaluated (2377/fr)
 INFO: ngram_search_fwdtree.c(1559):  1140535 channels searched (5091/fr), 119973 1st, 118075 last
 INFO: ngram_search_fwdtree.c(1562):     6022 words for which last channels evaluated (26/fr)
 INFO: ngram_search_fwdtree.c(1564):    40661 candidate words for entering last phone (181/fr)
+<<<<<<< HEAD
 INFO: ngram_search_fwdtree.c(1567): fwdtree 4.94 CPU 2.205 xRT
 INFO: ngram_search_fwdtree.c(1570): fwdtree 4.95 wall 2.212 xRT
+=======
+INFO: ngram_search_fwdtree.c(1567): fwdtree 4.90 CPU 2.187 xRT
+INFO: ngram_search_fwdtree.c(1570): fwdtree 4.90 wall 2.189 xRT
+>>>>>>> remotes/origin/AudioDevelopment
 INFO: ngram_search_fwdflat.c(302): Utterance vocabulary contains 147 words
 INFO: ngram_search_fwdflat.c(948):     2445 words recognized (11/fr)
 INFO: ngram_search_fwdflat.c(950):    95221 senones evaluated (425/fr)
 INFO: ngram_search_fwdflat.c(952):   193232 channels searched (862/fr)
 INFO: ngram_search_fwdflat.c(954):    10464 words searched (46/fr)
 INFO: ngram_search_fwdflat.c(957):     7425 word transitions (33/fr)
+<<<<<<< HEAD
 INFO: ngram_search_fwdflat.c(960): fwdflat 1.35 CPU 0.603 xRT
 INFO: ngram_search_fwdflat.c(963): fwdflat 1.35 wall 0.605 xRT
+=======
+INFO: ngram_search_fwdflat.c(960): fwdflat 1.31 CPU 0.585 xRT
+INFO: ngram_search_fwdflat.c(963): fwdflat 1.32 wall 0.589 xRT
+>>>>>>> remotes/origin/AudioDevelopment
 INFO: cmn_prior.c(131): cmn_prior_update: from < 43.59 -4.53  0.28  7.00  3.61 -4.94 -2.15 -2.62 -6.08 -1.35 -7.25 -1.88  0.46 >
 INFO: cmn_prior.c(149): cmn_prior_update: to   < 43.59 -4.53  0.28  7.00  3.61 -4.94 -2.15 -2.62 -6.08 -1.35 -7.25 -1.88  0.46 >
 INFO: ngram_search_fwdtree.c(1553):     2557 words recognized (11/fr)
@@ -201,14 +221,20 @@ INFO: ngram_search_fwdtree.c(1555):   510824 senones evaluated (2280/fr)
 INFO: ngram_search_fwdtree.c(1559):  1048922 channels searched (4682/fr), 119232 1st, 113463 last
 INFO: ngram_search_fwdtree.c(1562):     5766 words for which last channels evaluated (25/fr)
 INFO: ngram_search_fwdtree.c(1564):    36040 candidate words for entering last phone (160/fr)
+<<<<<<< HEAD
 INFO: ngram_search_fwdtree.c(1567): fwdtree 4.68 CPU 2.089 xRT
 INFO: ngram_search_fwdtree.c(1570): fwdtree 4.70 wall 2.098 xRT
+=======
+INFO: ngram_search_fwdtree.c(1567): fwdtree 4.63 CPU 2.067 xRT
+INFO: ngram_search_fwdtree.c(1570): fwdtree 4.65 wall 2.075 xRT
+>>>>>>> remotes/origin/AudioDevelopment
 INFO: ngram_search_fwdflat.c(302): Utterance vocabulary contains 143 words
 INFO: ngram_search_fwdflat.c(948):     2282 words recognized (10/fr)
 INFO: ngram_search_fwdflat.c(950):    92388 senones evaluated (412/fr)
 INFO: ngram_search_fwdflat.c(952):   186097 channels searched (830/fr)
 INFO: ngram_search_fwdflat.c(954):    10030 words searched (44/fr)
 INFO: ngram_search_fwdflat.c(957):     7203 word transitions (32/fr)
+<<<<<<< HEAD
 INFO: ngram_search_fwdflat.c(960): fwdflat 1.29 CPU 0.576 xRT
 INFO: ngram_search_fwdflat.c(963): fwdflat 1.30 wall 0.580 xRT
 INFO: ngram_search_fwdtree.c(432): TOTAL fwdtree 15.99 CPU 2.252 xRT
@@ -221,6 +247,20 @@ FWDFLAT: go forward ten meters (-5919, 0)
 FWDFLAT: go forward ten meters (-5604, 0)
 2.23 seconds speech, 6.29 seconds CPU, 6.31 seconds wall
 2.82 xRT (CPU), 2.83 xRT (elapsed)
+=======
+INFO: ngram_search_fwdflat.c(960): fwdflat 1.28 CPU 0.571 xRT
+INFO: ngram_search_fwdflat.c(963): fwdflat 1.28 wall 0.572 xRT
+INFO: ngram_search_fwdtree.c(432): TOTAL fwdtree 16.52 CPU 2.327 xRT
+INFO: ngram_search_fwdtree.c(435): TOTAL fwdtree 16.55 wall 2.331 xRT
+INFO: ngram_search_fwdflat.c(176): TOTAL fwdflat 4.02 CPU 0.566 xRT
+INFO: ngram_search_fwdflat.c(179): TOTAL fwdflat 4.04 wall 0.569 xRT
+FWDFLAT: go forward ten meters (-5919, 0)
+2.64 seconds speech, 8.42 seconds CPU, 8.44 seconds wall
+3.19 xRT (CPU), 3.20 xRT (elapsed)
+FWDFLAT: go forward ten meters (-5604, 0)
+2.23 seconds speech, 6.21 seconds CPU, 6.22 seconds wall
+2.78 xRT (CPU), 2.79 xRT (elapsed)
+>>>>>>> remotes/origin/AudioDevelopment
 FWDFLAT: go forward ten meters (-5628, 0)
 <s> (318:325) P(w|o) = 1.000000 ascr = -103 lscr = 0 lback = 0
 go (326:343) P(w|o) = 1.000000 ascr = -275 lscr = -424 lback = 2
@@ -228,7 +268,14 @@ forward (344:396) P(w|o) = 1.000000 ascr = -836 lscr = -414 lback = 2
 ten (397:432) P(w|o) = 1.000000 ascr = -887 lscr = -610 lback = 1
 meters (433:491) P(w|o) = 1.000000 ascr = -1347 lscr = -431 lback = 2
 </s> (492:539) P(w|o) = 1.000000 ascr = -166 lscr = -135 lback = 2
+<<<<<<< HEAD
 2.23 seconds speech, 5.97 seconds CPU, 6.00 seconds wall
 2.68 xRT (CPU), 2.69 xRT (elapsed)
 TOTAL: 7.10 seconds speech, 20.08 seconds CPU, 20.16 seconds wall
 TOTAL: 2.83 xRT (CPU), 2.84 xRT (elapsed)
+=======
+2.23 seconds speech, 5.91 seconds CPU, 5.93 seconds wall
+2.65 xRT (CPU), 2.66 xRT (elapsed)
+TOTAL: 7.10 seconds speech, 20.54 seconds CPU, 20.59 seconds wall
+TOTAL: 2.89 xRT (CPU), 2.90 xRT (elapsed)
+>>>>>>> remotes/origin/AudioDevelopment

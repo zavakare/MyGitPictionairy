@@ -166,8 +166,13 @@ INFO: ngram_search_fwdtree.c(1555):   661976 senones evaluated (2498/fr)
 INFO: ngram_search_fwdtree.c(1559):  1533547 channels searched (5786/fr), 149474 1st, 124567 last
 INFO: ngram_search_fwdtree.c(1562):     6748 words for which last channels evaluated (25/fr)
 INFO: ngram_search_fwdtree.c(1564):    55300 candidate words for entering last phone (208/fr)
+<<<<<<< HEAD
 INFO: ngram_search_fwdtree.c(1567): fwdtree 6.30 CPU 2.377 xRT
 INFO: ngram_search_fwdtree.c(1570): fwdtree 6.30 wall 2.376 xRT
+=======
+INFO: ngram_search_fwdtree.c(1567): fwdtree 7.39 CPU 2.789 xRT
+INFO: ngram_search_fwdtree.c(1570): fwdtree 7.51 wall 2.833 xRT
+>>>>>>> remotes/origin/AudioDevelopment
 INFO: cmn_prior.c(131): cmn_prior_update: from < 41.00 -5.30 -0.11  5.09  2.47 -4.07 -1.38 -1.79 -5.09 -2.07 -6.45 -1.43  1.15 >
 INFO: cmn_prior.c(149): cmn_prior_update: to   < 43.59 -4.53  0.28  7.00  3.61 -4.94 -2.15 -2.62 -6.08 -1.35 -7.25 -1.88  0.46 >
 INFO: ngram_search_fwdtree.c(1553):     2622 words recognized (12/fr)
@@ -175,8 +180,13 @@ INFO: ngram_search_fwdtree.c(1555):   532389 senones evaluated (2377/fr)
 INFO: ngram_search_fwdtree.c(1559):  1140535 channels searched (5091/fr), 119973 1st, 118075 last
 INFO: ngram_search_fwdtree.c(1562):     6022 words for which last channels evaluated (26/fr)
 INFO: ngram_search_fwdtree.c(1564):    40661 candidate words for entering last phone (181/fr)
+<<<<<<< HEAD
 INFO: ngram_search_fwdtree.c(1567): fwdtree 4.87 CPU 2.174 xRT
 INFO: ngram_search_fwdtree.c(1570): fwdtree 4.88 wall 2.179 xRT
+=======
+INFO: ngram_search_fwdtree.c(1567): fwdtree 5.00 CPU 2.232 xRT
+INFO: ngram_search_fwdtree.c(1570): fwdtree 5.16 wall 2.302 xRT
+>>>>>>> remotes/origin/AudioDevelopment
 INFO: cmn_prior.c(131): cmn_prior_update: from < 43.59 -4.53  0.28  7.00  3.61 -4.94 -2.15 -2.62 -6.08 -1.35 -7.25 -1.88  0.46 >
 INFO: cmn_prior.c(149): cmn_prior_update: to   < 43.59 -4.53  0.28  7.00  3.61 -4.94 -2.15 -2.62 -6.08 -1.35 -7.25 -1.88  0.46 >
 INFO: ngram_search_fwdtree.c(1553):     2557 words recognized (11/fr)
@@ -184,6 +194,7 @@ INFO: ngram_search_fwdtree.c(1555):   510823 senones evaluated (2280/fr)
 INFO: ngram_search_fwdtree.c(1559):  1048922 channels searched (4682/fr), 119232 1st, 113463 last
 INFO: ngram_search_fwdtree.c(1562):     5766 words for which last channels evaluated (25/fr)
 INFO: ngram_search_fwdtree.c(1564):    36040 candidate words for entering last phone (160/fr)
+<<<<<<< HEAD
 INFO: ngram_search_fwdtree.c(1567): fwdtree 4.64 CPU 2.071 xRT
 INFO: ngram_search_fwdtree.c(1570): fwdtree 4.65 wall 2.076 xRT
 INFO: ngram_search_fwdtree.c(432): TOTAL fwdtree 15.81 CPU 2.227 xRT
@@ -194,6 +205,18 @@ FWDTREE: go forward ten meters (-7708, 0)
 FWDTREE: go forward ten meters (-7158, 0)
 2.23 seconds speech, 4.88 seconds CPU, 4.88 seconds wall
 2.19 xRT (CPU), 2.19 xRT (elapsed)
+=======
+INFO: ngram_search_fwdtree.c(1567): fwdtree 4.71 CPU 2.103 xRT
+INFO: ngram_search_fwdtree.c(1570): fwdtree 4.71 wall 2.103 xRT
+INFO: ngram_search_fwdtree.c(432): TOTAL fwdtree 17.10 CPU 2.408 xRT
+INFO: ngram_search_fwdtree.c(435): TOTAL fwdtree 17.37 wall 2.447 xRT
+FWDTREE: go forward ten meters (-7708, 0)
+2.64 seconds speech, 7.39 seconds CPU, 7.51 seconds wall
+2.80 xRT (CPU), 2.84 xRT (elapsed)
+FWDTREE: go forward ten meters (-7158, 0)
+2.23 seconds speech, 5.00 seconds CPU, 5.16 seconds wall
+2.24 xRT (CPU), 2.31 xRT (elapsed)
+>>>>>>> remotes/origin/AudioDevelopment
 FWDTREE: go forward ten meters (-7041, 0)
 <s> (318:325) P(w|o) = 1.000000 ascr = -123 lscr = 0 lback = 0
 go (326:343) P(w|o) = 1.000000 ascr = -413 lscr = -424 lback = 2
@@ -201,7 +224,14 @@ forward (344:396) P(w|o) = 1.000000 ascr = -1119 lscr = -414 lback = 2
 ten (397:432) P(w|o) = 1.000000 ascr = -1102 lscr = -610 lback = 1
 meters (433:491) P(w|o) = 1.000000 ascr = -1908 lscr = -431 lback = 2
 </s> (492:539) P(w|o) = 1.000000 ascr = -362 lscr = -135 lback = 2
+<<<<<<< HEAD
 2.23 seconds speech, 4.64 seconds CPU, 4.65 seconds wall
 2.08 xRT (CPU), 2.09 xRT (elapsed)
 TOTAL: 7.10 seconds speech, 15.82 seconds CPU, 15.83 seconds wall
 TOTAL: 2.23 xRT (CPU), 2.23 xRT (elapsed)
+=======
+2.23 seconds speech, 4.71 seconds CPU, 4.71 seconds wall
+2.11 xRT (CPU), 2.11 xRT (elapsed)
+TOTAL: 7.10 seconds speech, 17.10 seconds CPU, 17.37 seconds wall
+TOTAL: 2.41 xRT (CPU), 2.45 xRT (elapsed)
+>>>>>>> remotes/origin/AudioDevelopment

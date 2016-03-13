@@ -1,0 +1,3 @@
+ERROR: "cmd_ln.c", line 604: Unknown argument name ' -inmic'
+ERROR: "cmd_ln.c", line 701: Failed to parse arguments list
+INFO: continuous.c(295): Specify '-infile <file.wav>' to recognize from file or '-inmic yes' to recognize from microphone.

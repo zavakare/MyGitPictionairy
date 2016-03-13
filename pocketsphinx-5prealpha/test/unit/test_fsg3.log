@@ -180,7 +180,11 @@ INFO: fsg_lextree.c(262): Allocated 12120 bytes (11 KiB) for lextree leafnodes
 INFO: fsg_search.c(859): 388 frames, 16022 HMMs (41/fr), 49059 senones (126/fr), 16865 history entries (43/fr)
 
 INFO: fsg_search.c(869): fsg 0.25 CPU 0.064 xRT
+<<<<<<< HEAD
 INFO: fsg_search.c(871): fsg 0.25 wall 0.064 xRT
+=======
+INFO: fsg_search.c(871): fsg 0.27 wall 0.070 xRT
+>>>>>>> remotes/origin/AudioDevelopment
 FSG: three three four six nine eight two (-68272)
 INFO: cmn_prior.c(131): cmn_prior_update: from < 63.00 -1.00  1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00 >
 INFO: cmn_prior.c(149): cmn_prior_update: to   < 47.78 -1.59  0.42  0.96 -1.46 -0.79 -0.43  0.33 -0.23  0.50  0.08 -0.06 -0.00 >
@@ -236,4 +240,8 @@ INFO: ps_lattice.c(1384): Normalizer P(O) = alpha(</s>:388:388) = -939625472
 BESTPATH: three three four six nine eight
 INFO: ps_lattice.c(1441): Joint P(O,S) = -710062080 P(S|O) = 229563392
 INFO: fsg_search.c(265): TOTAL fsg 0.25 CPU 0.064 xRT
+<<<<<<< HEAD
 INFO: fsg_search.c(268): TOTAL fsg 0.25 wall 0.064 xRT
+=======
+INFO: fsg_search.c(268): TOTAL fsg 0.27 wall 0.071 xRT
+>>>>>>> remotes/origin/AudioDevelopment

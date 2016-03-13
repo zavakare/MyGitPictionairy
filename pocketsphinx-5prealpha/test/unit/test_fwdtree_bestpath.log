@@ -165,8 +165,13 @@ INFO: ngram_search_fwdtree.c(1555):   886851 senones evaluated (3385/fr)
 INFO: ngram_search_fwdtree.c(1559):  3165978 channels searched (12083/fr), 171962 1st, 179964 last
 INFO: ngram_search_fwdtree.c(1562):    11630 words for which last channels evaluated (44/fr)
 INFO: ngram_search_fwdtree.c(1564):   258372 candidate words for entering last phone (986/fr)
+<<<<<<< HEAD
 INFO: ngram_search_fwdtree.c(1567): fwdtree 10.64 CPU 4.061 xRT
 INFO: ngram_search_fwdtree.c(1570): fwdtree 10.64 wall 4.062 xRT
+=======
+INFO: ngram_search_fwdtree.c(1567): fwdtree 10.18 CPU 3.885 xRT
+INFO: ngram_search_fwdtree.c(1570): fwdtree 10.19 wall 3.889 xRT
+>>>>>>> remotes/origin/AudioDevelopment
 FWDTREE: go forward ten meters
 INFO: cmn_prior.c(131): cmn_prior_update: from < 40.00  3.00 -1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00 >
 INFO: cmn_prior.c(149): cmn_prior_update: to   < 41.00 -5.30 -0.11  5.09  2.47 -4.07 -1.38 -1.79 -5.09 -2.07 -6.45 -1.43  1.15 >
@@ -182,8 +187,13 @@ INFO: ngram_search_fwdtree.c(1555):   733371 senones evaluated (3274/fr)
 INFO: ngram_search_fwdtree.c(1559):  2784166 channels searched (12429/fr), 144409 1st, 140943 last
 INFO: ngram_search_fwdtree.c(1562):     9553 words for which last channels evaluated (42/fr)
 INFO: ngram_search_fwdtree.c(1564):   216945 candidate words for entering last phone (968/fr)
+<<<<<<< HEAD
 INFO: ngram_search_fwdtree.c(1567): fwdtree 8.80 CPU 3.929 xRT
 INFO: ngram_search_fwdtree.c(1570): fwdtree 8.80 wall 3.927 xRT
+=======
+INFO: ngram_search_fwdtree.c(1567): fwdtree 8.40 CPU 3.750 xRT
+INFO: ngram_search_fwdtree.c(1570): fwdtree 8.41 wall 3.753 xRT
+>>>>>>> remotes/origin/AudioDevelopment
 FWDTREE: go forward ten meters
 INFO: cmn_prior.c(131): cmn_prior_update: from < 41.00 -5.30 -0.11  5.09  2.47 -4.07 -1.38 -1.79 -5.09 -2.07 -6.45 -1.43  1.15 >
 INFO: cmn_prior.c(149): cmn_prior_update: to   < 42.20 -4.95  0.07  5.97  2.99 -4.47 -1.73 -2.17 -5.55 -1.74 -6.82 -1.64  0.83 >
@@ -199,8 +209,13 @@ INFO: ngram_search_fwdtree.c(1555):   730890 senones evaluated (3263/fr)
 INFO: ngram_search_fwdtree.c(1559):  2681570 channels searched (11971/fr), 144190 1st, 140204 last
 INFO: ngram_search_fwdtree.c(1562):     9519 words for which last channels evaluated (42/fr)
 INFO: ngram_search_fwdtree.c(1564):   200959 candidate words for entering last phone (897/fr)
+<<<<<<< HEAD
 INFO: ngram_search_fwdtree.c(1567): fwdtree 8.51 CPU 3.799 xRT
 INFO: ngram_search_fwdtree.c(1570): fwdtree 8.51 wall 3.800 xRT
+=======
+INFO: ngram_search_fwdtree.c(1567): fwdtree 8.22 CPU 3.670 xRT
+INFO: ngram_search_fwdtree.c(1570): fwdtree 8.23 wall 3.674 xRT
+>>>>>>> remotes/origin/AudioDevelopment
 FWDTREE: go forward ten meters
 INFO: cmn_prior.c(131): cmn_prior_update: from < 42.20 -4.95  0.07  5.97  2.99 -4.47 -1.73 -2.17 -5.55 -1.74 -6.82 -1.64  0.83 >
 INFO: cmn_prior.c(149): cmn_prior_update: to   < 42.64 -4.81  0.13  6.29  3.19 -4.62 -1.86 -2.31 -5.72 -1.62 -6.95 -1.72  0.72 >
@@ -218,8 +233,13 @@ INFO: ngram_search_fwdtree.c(1555):   729079 senones evaluated (3255/fr)
 INFO: ngram_search_fwdtree.c(1559):  2633506 channels searched (11756/fr), 144145 1st, 134634 last
 INFO: ngram_search_fwdtree.c(1562):     9296 words for which last channels evaluated (41/fr)
 INFO: ngram_search_fwdtree.c(1564):   195268 candidate words for entering last phone (871/fr)
+<<<<<<< HEAD
 INFO: ngram_search_fwdtree.c(1567): fwdtree 8.40 CPU 3.750 xRT
 INFO: ngram_search_fwdtree.c(1570): fwdtree 8.39 wall 3.747 xRT
+=======
+INFO: ngram_search_fwdtree.c(1567): fwdtree 8.86 CPU 3.955 xRT
+INFO: ngram_search_fwdtree.c(1570): fwdtree 8.87 wall 3.958 xRT
+>>>>>>> remotes/origin/AudioDevelopment
 FWDTREE: go forward ten meters
 INFO: cmn_prior.c(131): cmn_prior_update: from < 43.13 -3.40 -0.07  5.19  3.00 -4.28 -1.92 -2.62 -6.13 -1.45 -7.42 -1.75  0.91 >
 INFO: cmn_prior.c(149): cmn_prior_update: to   < 42.11 -5.34  0.28  6.99  3.39 -4.83 -1.91 -2.24 -5.56 -1.58 -6.73 -1.73  0.52 >
@@ -237,8 +257,13 @@ INFO: ngram_search_fwdtree.c(1555):   730233 senones evaluated (3260/fr)
 INFO: ngram_search_fwdtree.c(1559):  2650229 channels searched (11831/fr), 144608 1st, 140209 last
 INFO: ngram_search_fwdtree.c(1562):     9575 words for which last channels evaluated (42/fr)
 INFO: ngram_search_fwdtree.c(1564):   196631 candidate words for entering last phone (877/fr)
+<<<<<<< HEAD
 INFO: ngram_search_fwdtree.c(1567): fwdtree 8.40 CPU 3.750 xRT
 INFO: ngram_search_fwdtree.c(1570): fwdtree 8.41 wall 3.754 xRT
+=======
+INFO: ngram_search_fwdtree.c(1567): fwdtree 8.20 CPU 3.661 xRT
+INFO: ngram_search_fwdtree.c(1570): fwdtree 8.20 wall 3.661 xRT
+>>>>>>> remotes/origin/AudioDevelopment
 FWDTREE: go forward ten meters
 INFO: cmn_prior.c(131): cmn_prior_update: from < 43.54 -3.68 -0.19  7.66  4.13 -5.45 -2.47 -2.75 -6.02 -1.48 -7.14 -2.13  0.22 >
 INFO: cmn_prior.c(149): cmn_prior_update: to   < 41.17 -5.85  0.54  6.50  3.00 -4.44 -1.66 -2.07 -5.41 -1.52 -6.59 -1.55  0.66 >
@@ -255,8 +280,14 @@ INFO: ps_lattice.c(1384): Normalizer P(O) = alpha(</s>:174:222) = -77415360
 go forward ten meters
 INFO: ps_lattice.c(1380): Bestpath score: -7600
 INFO: ps_lattice.c(1384): Normalizer P(O) = alpha(</s>:174:222) = -77415360
+<<<<<<< HEAD
 5 * fwdtree + bestpath search in 44.85 sec
 INFO: ngram_search_fwdtree.c(432): TOTAL fwdtree 44.75 CPU inf xRT
 INFO: ngram_search_fwdtree.c(435): TOTAL fwdtree 44.75 wall inf xRT
+=======
+5 * fwdtree + bestpath search in 43.98 sec
+INFO: ngram_search_fwdtree.c(432): TOTAL fwdtree 43.86 CPU inf xRT
+INFO: ngram_search_fwdtree.c(435): TOTAL fwdtree 43.89 wall inf xRT
+>>>>>>> remotes/origin/AudioDevelopment
 INFO: ngram_search.c(303): TOTAL bestpath 0.00 CPU nan xRT
 INFO: ngram_search.c(306): TOTAL bestpath 0.00 wall nan xRT
