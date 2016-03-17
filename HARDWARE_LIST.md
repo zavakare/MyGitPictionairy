@@ -1,8 +1,5 @@
-# HARDWARE LIST
-* Raspberry Pi 2
-* Logitech Webcam & Microphone combo
-* Orange ping pong ball
-
-#Unused up to this point
-* Raspberry Pi 2 7" Touch Screen
+*Raspberry Pi 2
+*Orange ping pong ball (tracking object)
+* Logitech Webcam and Mic 
+* Separate external mic
 

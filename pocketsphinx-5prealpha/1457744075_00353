@@ -1,0 +1,30 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /tools/product/1457744075_00353</title>
+ </head>
+ <body>
+<h1>Sphinx knowledge base generator [lmtool.3a]</h1>
+<hr>
+
+Your Sphinx knowledge base compilation has been successfully processed!
+<p>The base name for this set is <b>1489</b>. 
+ <a href="http://www.speech.cs.cmu.edu/tools/product/1457744075_00353/TAR1489.tgz">TAR1489.tgz</a> is the compressed version.
+ <br/>Note that this set of files is internally consistent and is best used together.
+<br/><br/><strong>IMPORTANT:</strong> 
+Please download these files as soon as possible; they will be deleted in approximately a half hour.</p>
+<table border="1" cellspacing="0" cellpadding="10"><tr align="TOP"><td><pre>SESSION 1457744075_00353
+<span STYLE="color: green">[_INFO_] Found corpus: 15 sentences, 15 unique words</span>
+<span STYLE="color: green">[_INFO_] Found 0 words in extras  (0)</span>
+<span STYLE="color: green">[_INFO_] Language model completed  (0)</span>
+<span STYLE="color: green">[_INFO_] Pronounce completed  (0)</span>
+[_STAT_] Elapsed time: 0.041 sec</pre>Please include these messages in bug reports.</td></tr></table>
+<pre><img src="/icons/blank.gif" alt="Icon "> <a href="?C=N;O=D">Name</a>                    <a href="?C=S;O=A">Size</a>  <a href="?C=D;O=A">Description</a><hr><img src="/icons/text.gif" alt="[TXT]"> <a href="1489.dic">1489.dic</a>                303    <i>Pronunciation Dictionary</i>
+<img src="/icons/unknown.gif" alt="[   ]"> <a href="1489.lm">1489.lm</a>                 2.1K   <i>Language Model</i>
+<img src="/icons/unknown.gif" alt="[   ]"> <a href="1489.log_pronounce">1489.log_pronounce</a>      229    <i>Log File</i>
+<img src="/icons/unknown.gif" alt="[   ]"> <a href="1489.sent">1489.sent</a>               243    <i>Corpus (processed)</i>
+<img src="/icons/unknown.gif" alt="[   ]"> <a href="1489.vocab">1489.vocab</a>              108    <i>Word List</i>
+<img src="/icons/compressed.gif" alt="[   ]"> <a href="TAR1489.tgz">TAR1489.tgz</a>             1.2K   <b>COMPRESSED TARBALL</b>
+<hr></pre>
+<address>Apache/2.2.22 (Ubuntu) Server at www.speech.cs.cmu.edu Port 80</address>
+</body></html>
