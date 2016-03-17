@@ -6,8 +6,23 @@ import Tkinter
 from Tkinter import *
 import ChooseCat
 import loadArray
+
 #stores information saved from entry boxes
 info = []
+
+#keeps track of round number, and which player from each team is drawing next
+global roundNumber
+roundNumber=1
+global team1Drawing
+team1Drawing=0
+global team2Drawing
+team2Drawing=0
+
+#keeps tracks of current score
+global team1Score
+team1Score=0
+global team2Score
+team2Score=0
 
 def mainStart():
 	# initialize window size, title
@@ -57,7 +72,7 @@ def mainStart():
 		info.append(t2player2Entry.get())
 
 		#open file which will save entries
-        	outf = open('testfile.txt', 'w')
+        	outf = open('savedNames.txt', 'w')
 		#send each user entry into the file
 	       	for item in info:
 		        print>>outf, item

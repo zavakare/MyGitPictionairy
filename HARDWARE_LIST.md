@@ -1,3 +1,8 @@
 # HARDWARE LIST
+* Raspberry Pi 2
+* Logitech Webcam & Microphone combo
+* Orange ping pong ball
 
-Contains a list of each part of the hardware used for the project. Description (model/make/etc), cost, and purpose
+#Unused up to this point
+* Raspberry Pi 2 7" Touch Screen
+

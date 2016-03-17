@@ -66,7 +66,6 @@ button4.config(height=3, width=7)
 button3.place(x=520, y=320)
 button2.place(x=920, y=320)
 button4.place(x=520, y=520)
-button.place(x=920, y=520)
 
-#display window on screen
+display window on screen
 root.mainloop()

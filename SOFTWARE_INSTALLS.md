@@ -27,6 +27,3 @@ keep updating this as you install packages, this way everyone has the same softw
 * **sudo pip install svgwrite**
 * **sudo pip install https://github.com/sightmachine/SimpleCV/zipball/master**
 
-
-
-
