@@ -76,7 +76,7 @@ def mainStart():
 		#send each user entry into the file
 	       	for item in info:
 		        print>>outf, item
-	        outf.close
+	        outf.close()
 		loadArray.arrayOne()
 		loadArray.arrayTwo()
 		loadArray.arrayThree()

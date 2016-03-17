@@ -101,8 +101,8 @@ def main():
 	Button(root, fg='blue', text='Start', command=combo).pack()
 	
 	# create score labels
-	team1Score = Label(root, text=nameArray[0] + ': ' + `startGame.team1Score`, font=("Helvetica", 56))
-	team2Score = Label(root, text=nameArray[3] + ': ' + `startGame.team2Score`, font=("Helvetica", 56))
+	team1Score = Label(root, text=nameArray[0] + ' : ' + `startGame.team1Score`, font=("Helvetica", 56))
+	team2Score = Label(root, text=nameArray[3] + ' : ' + `startGame.team2Score`, font=("Helvetica", 56))
 	team1Score.place(x=550,y=750)
 	team2Score.place(x=950,y=750)
 	root.mainloop()
