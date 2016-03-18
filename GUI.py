@@ -55,7 +55,7 @@ def aboutus():
         AboutWin.minsize(1200,800)
         AboutHeader = Label(AboutWin, text = 'About Us')
         AboutHeader.pack()
-        AboutUsText = Label(AboutWin, text = 'Insert Text')
+        AboutUsText = Label(AboutWin, text = 'The game pictionAIRy was made over the course of the spring 2016 semester. Made by Alex, Marry, Theodora, Sam, and Karen. All of the group members are currently computer science majors, which attend Dominican University in River Forest. The project was for CPSC 431, Principles of Unix and Professor Bonakdarian.  The group managed the time wisely and had a lot of fun making the project. ')
         AboutUsText.pack()
 
 #creates main menu  buttons
