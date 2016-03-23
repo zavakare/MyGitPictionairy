@@ -50,11 +50,19 @@ def listrules():
 	rulesButton = Button(rulesWin, text="Go BaCk", command=closewindow, font=("Georgia", 40))
 	rulesButton.pack()
 
+def aboutus():
+	AboutWin = Tk()
+        AboutWin.minsize(1200,800)
+        AboutHeader = Label(AboutWin, text = 'About Us')
+        AboutHeader.pack()
+        AboutUsText = Label(AboutWin, text = 'The game pictionAIRy was made over the course of the spring 2016 semester. Made by Alex, Marry, Theodora, Sam, and Karen. All of the group members are currently computer science majors, which attend Dominican University in River Forest. The project was for CPSC 431, Principles of Unix and Professor Bonakdarian.  The group managed the time wisely and had a lot of fun making the project. ')
+        AboutUsText.pack()
+
 #creates main menu  buttons
 button = Button(root, text="Exit", command=closewindow, font=("Georgia", 40))
 button2 = Button(root, text="Rules", command=listrules, font=("Georgia", 40))
 button3 = Button(root, text="Start", command=openGame, font=("Georgia", 40))
-button4 = Button(root, text="About Us", command=closewindow, font=("Georgia", 40))
+button4 = Button(root, text="About Us", command=aboutus, font=("Georgia", 40))
 
 #size of buttons
 button.config(height=3, width=7)
@@ -63,10 +71,10 @@ button3.config(height=3, width=7)
 button4.config(height=3, width=7)
 
 #placing of button
+button.place(x=920, y=520)
 button3.place(x=520, y=320)
 button2.place(x=920, y=320)
 button4.place(x=520, y=520)
-button.place(x=920, y=520)
 
 #display window on screen
 root.mainloop()

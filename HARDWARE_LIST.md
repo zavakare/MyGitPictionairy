@@ -1,3 +1,5 @@
-# HARDWARE LIST
+*Raspberry Pi 2
+*Orange ping pong ball (tracking object)
+* Logitech Webcam and Mic 
+* Separate external mic
 
-Contains a list of each part of the hardware used for the project. Description (model/make/etc), cost, and purpose
