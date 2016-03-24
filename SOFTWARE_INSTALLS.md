@@ -89,4 +89,3 @@ keep updating this as you install packages, this way everyone has the same softw
 	* **sudo pip install hg+http://hg.code.sf.net/p/raspberry-gpio-python/code#egg=RPi.GPIO
 	* **sudo pip-3.2 install hg+http://hg.code.sf.net/p/raspberry-gpio-python/code#egg=RPi.GPIO
 
-

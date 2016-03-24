@@ -8,43 +8,85 @@ import ChooseCat
 import NewMotion
 import tkSimpleDialog
 import startGame
+import subprocess
+import whatever
+import RPi.GPIO as GPIO
+import time
+
+
+#global presto
+presto=1 
 
 # calls motion function
 def openDrawing():
-	NewMotion.drawFunction()
-
+#	NewMotion.drawFunction()
+	print "Hello"	
 #sets clock to 45 seconds
-sec = 45
+sec = 15
 
 #creates timer and creates dialog that checks guess word with chosen word
 def tick():
 	global sec 
+#	if (pressed % 2 == 0):
+#		print "yupp"
+#	else:
+#		print "In gameplay the value is: " + str(whatever.pressed) 
+#		print "taco"
+
 	if (sec <=  0):
 		time['text']='stop'
 		global result
 		result = tkSimpleDialog.askstring("Ask Audience", "What is your guess?")
 		if(result == ChooseCat.ChosenWord):
 			print("Winner")
-			print(ChooseCat.ChosenWord)
+			if (startGame.roundNumber % 2 == 0):
+				startGame.team1Score += 1
+#				subprocess.call(['/home/pi/PiProject/Team2/killIt.sh'])
+#				subprocess.call(['./switch.py'])
+
+				
+			else:
+				startGame.team2Score += 1
 		else:
 			print("Nope")
 			print(result)
 			print(ChooseCat.ChosenWord)
 		
 	else:
+	        if (presto % 2 == 0):
+	                print "yupp"
+        	else:
+                	print "taco"
+
 		sec = sec - 1
 		time['text'] = sec
 		# Take advantage of the after method of the Label
 		time.after(1000, tick)
+
+def startButton():
+	global presto
+#	subprocess.call(['./switchIt.py'])
+	GPIO.setmode(GPIO.BCM)
+	GPIO.setup(18, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+	while True:
+	       	input_state = GPIO.input(18)
+		if input_state == False:
+       		        print('Button Pressed')
+			presto+=1
+	               	time.sleep(0.2)
+
 
 #combines timer and openDrawing call
 def combo():
 	t=threading.Thread(target=openDrawing)
 	t.start()
 	tick()
+	f=threading.Thread(target=startButton)
+	f.start()
 
 #calls timer and creates window
 def main():
+#	subprocess.call(['/home/PiProject/Team2/buttons/switch.py'])
 	#create blank window and set minimum size
 	root = Tk()
 	root.minsize(1780, 1080)
@@ -106,6 +148,10 @@ def main():
 	team1Score.place(x=550,y=750)
 	team2Score.place(x=950,y=750)
 	root.mainloop()
+	subprocess.call(['./switch.py'])
+#	startButton()
 
 if __name__ == "__main__":
 	main()
+	#GPIO.setmode(GPIO.BCM)
+	#GPIO.setup(18, GPIO.IN, pull_up_down=GPIO.PUD_UP)

@@ -47,8 +47,14 @@ def listrules():
         Rule5.pack()
 	Rule6 = Label(rulesWin, text = '6.The team will get the point if the guess is correct.  The Team at the end of 3 rounds with the most points will win! ')
         Rule6.pack()
-	rulesButton = Button(rulesWin, text="Go BaCk", command=closewindow, font=("Georgia", 40))
+	#rulesButton = Button(rulesWin, text="Go BaCk", command=closewindow, font=("Georgia", 40))
+	#rulesButton.pack()
+	rulesButton = Button(rulesWin, text = 'root quit', command=rulesWin.quit)
 	rulesButton.pack()
+	#self.root.mainloop()
+
+def quit():
+       rulesWin.destroy()
 
 def aboutus():
 	AboutWin = Tk()
