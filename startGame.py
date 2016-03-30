@@ -11,18 +11,18 @@ import loadArray
 info = []
 
 #keeps track of round number, and which player from each team is drawing next
-global roundNumber
-roundNumber=1
-global team1Drawing
-team1Drawing=0
-global team2Drawing
-team2Drawing=0
+#global roundNumber
+#roundNumber=1
+#global team1Drawing
+#team1Drawing=0
+#global team2Drawing
+#team2Drawing=0
 
 #keeps tracks of current score
-global team1Score
-team1Score=0
-global team2Score
-team2Score=0
+#global team1Score
+#team1Score=0
+#global team2Score
+#team2Score=0
 
 def mainStart():
 	# initialize window size, title
@@ -77,6 +77,12 @@ def mainStart():
 	       	for item in info:
 		        print>>outf, item
 	        outf.close()
+		#initializes round number, team 1 member drawing, team 2 member drawing,
+		#team 1 score, team 2 score
+		outf = open('roundInfo.txt', 'w')
+		outf.write('1,0,0,0,0')
+                outf.close()
+
 		loadArray.arrayOne()
 		loadArray.arrayTwo()
 		loadArray.arrayThree()

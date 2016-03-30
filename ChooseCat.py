@@ -6,12 +6,12 @@ import Tkinter
 from Tkinter import *
 import random
 import GamePlay
-import startGame
 import loadArray
 import tkMessageBox as box
 
 #stores information saved from entry boxes
 cat = []
+global ChosenWord
 
 def select():
         # initialize window size, title
@@ -44,14 +44,29 @@ def select():
 #picks random word to draw from specific array, removes that word from array, and displays chosen word in message box
 
 def selectCat1() :
-	
-	global ChosenWord	
-	ChosenWord=random.choice (loadArray.array)
+	array = []
+	with open("category1.txt","r") as ins:
+		lines = ins.readlines()
+                for line in lines:
+			words = line.split()
+			for word in words:
+                        	array.append(word)
+
+#	global ChosenWord	
+	ChosenWord=random.choice (array)
 	print ChosenWord
-	loadArray.array.remove(ChosenWord)
-	print loadArray.array
+	array.remove(ChosenWord)
+	print array
 	print ChosenWord
 	var = box.showinfo('Draw This Word',ChosenWord)
+	#open file which will save entries
+        outf = open('category1.txt', 'w')
+	#send each user entry into the file
+        print>>outf, ' '.join(array)
+	outf.close()
+	outf = open('drawThis.txt', 'w')
+	print >>outf, ChosenWord
+	outf.close()
 	GamePlay.main()
 
 def selectCat2() :
@@ -87,4 +102,5 @@ def selectCat4() :
 	var = box.showinfo('Draw This Word',ChosenWord)
 	GamePlay.main()
 
-
+if __name__ == "__main__":
+	select()
