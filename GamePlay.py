@@ -12,7 +12,7 @@ import subprocess
 import RPi.GPIO as GPIO
 import time
 import ChooseCat
-from multiprocessing import Pool
+from multiprocessing import Process
 import os
 
 # even if the button has been pressed
@@ -27,8 +27,8 @@ ChosenWord='nada'
 
 
 # calls motion function
-def openDrawing():
-       # NewMotion.drawFunction()
+def openDrawing(nm):
+#        NewMotion.drawFunction()
 	os.system('./NewMotion.py')
         print "Hello"
 
@@ -36,13 +36,10 @@ def openDrawing():
 sec = 5 
 
 #creates timer and creates dialog that checks guess word with chosen word
-def tick():
+def tick(num):
         global sec
-
+	print ("In the tick method")
         if (sec <=  0):
-		print team1Score
-		print team2Score
-		print "----"
                 # checks to see if the button has been pressed
                 # if it has been pressed, don't ask for guess
                 if (button_pressed % 2 != 0):
@@ -52,6 +49,7 @@ def tick():
                         check_guess(result)
 
         else:
+		print ("We're in the else...")
                 sec = sec - 1
                 time['text'] = sec
                 # Take advantage of the after method of the Label
@@ -61,6 +59,7 @@ def check_guess(guess):
 	global team1Score
 	global team2Score
         if(guess == ChosenWord):
+                print("Winner")
                 if (roundNumber % 2 == 0):
                         team1Score = int(team1Score) + 1
                 else:
@@ -74,13 +73,9 @@ def check_guess(guess):
         if (roundNumber >= 4):
                 print "END OF GAME"
                 #call to winners page
-#               subprocess.call(['/home/pi/PiProject/Team2/killIt.sh'])
-#       else:
-#               subprocess.call(['/home/pi/PiProject/Team2/killIt.sh'])
-#               ChooseCat.select()
 
-def startButton():
-        global button_pressed
+def startButton(number):
+	global button_pressed
         GPIO.setmode(GPIO.BCM)
         GPIO.setup(18, GPIO.IN, pull_up_down=GPIO.PUD_UP)
         while True:
@@ -90,19 +85,43 @@ def startButton():
                         button_pressed+=1
                         result = tkSimpleDialog.askstring("Ask Audience", "What is your guess?")
                         check_guess(result)
-#                       time.sleep(0.2)
+                        time.sleep(0.2)
 
 
 #combines timer and openDrawing call
 def combo():
-	pool = Pool(processes=3)
+	global buttonP
+	global openSim
+	global startT
+
+	buttonP = Process(target=startButton, args=(0,))
+	openSim = Process(target=openDrawing, args=(0,))
+	startT = Process(target=tick, args=(0,))
+#	guiLo = Process(target=main, args=(0,))
+	buttonP.start()
+	openSim.start()
+	startT.start()
+	buttonP.join()
+	openSim.join()
+	startT.join()
+#	tick()
+#	p = Process(target=openDrawing, args=())
+#	q = Process(target=tick, args=())
+#	q.start()
+#	p.start()
+#	tick()
+#	q.join()
+#	p.join()
+#	pool = Pool(processes=3)
 #        t=threading.Thread(target=openDrawing)
 #        t.start()
-#       q=threading.Thread(target=tick)
-#       q.start()
+#        q=threading.Thread(target=tick)
+#        q.start()
 #        tick()
 #        f=threading.Thread(target=startButton)
-#       f.start()
+#        f.start()
+#        q=threading.Thread(target=tick)
+#        q.start()
 #       pool = Pool(processes=3)
 #       pool.apply_async(openDrawing)
 #       pool.apply_async(tick).start()
@@ -119,14 +138,9 @@ def combo():
 def saveRoundInfo():
                 outf = open('roundInfo.txt', 'w')
                 outstr = str(roundNumber)+','+str(team1Drawing)+','+str(team2Drawing)+','+str(team1Score) +','+str(team2Score)
-                print 'DEBUG #1', outstr
                 outf.write(outstr)
                 outf.close()
-#		subprocess.call(['/home/pi/PiProject/Team2/killIt.sh'])
-#                subprocess.call(['killIt.sh'])
 		os.system('./killIt.sh')
-
-
 
 #calls timer and creates window
 def main():
@@ -139,14 +153,14 @@ def main():
 
 	with open("roundInfo.txt","r") as ins:
                 lines = ins.readlines()
-                print 'DEBUG #2: ', lines
+
                 for line in lines:
 			words = line.split(",")
                         roundNumber = int(words[0])
 			team1Drawing = int(words[1])
 			team2Drawing = int(words[2])
 			team1Score = int(words[3])
-			team2Score = int(words[4])	
+			team2Score = int(words[4])
 
 	with open("drawThis.txt","r") as ins:
                 lines = ins.readlines()
