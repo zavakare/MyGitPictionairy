@@ -28,7 +28,8 @@ ChosenWord='nada'
 
 # calls motion function
 def openDrawing():
-        NewMotion.drawFunction()
+       # NewMotion.drawFunction()
+	os.system('./NewMotion.py')
         print "Hello"
 
 #sets clock to 45 seconds
@@ -65,9 +66,9 @@ def check_guess(guess):
                 print("Winner")
                 if (roundNumber % 2 == 0):
 			global team1Score
-#                        team1Score = int(team1Score) + 1
+                        team1Score = int(team1Score) + 1
                 else:
-#                        team2Score = int(team2Score) + 1
+                        team2Score = int(team2Score) + 1
 			print team1Score
 		saveRoundInfo()
         else:
@@ -145,8 +146,8 @@ def main():
                         roundNumber = int(words[0])
 			team1Drawing = int(words[1])
 			team2Drawing = int(words[2])
-			team1Score = words[3]
-			team2Score = words[4]	
+			team1Score = int(words[3])
+			team2Score = int(words[4])	
 
 	with open("drawThis.txt","r") as ins:
                 lines = ins.readlines()
