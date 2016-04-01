@@ -32,7 +32,7 @@ def openDrawing():
         print "Hello"
 
 #sets clock to 45 seconds
-sec = 20 
+sec = 5 
 
 #creates timer and creates dialog that checks guess word with chosen word
 def tick():
@@ -57,18 +57,18 @@ def tick():
                 time.after(1000, tick)
 
 def check_guess(guess):
-#	global team1Score
-#	global team2Score
+	global team1Score
+	global team2Score
         if(guess == ChosenWord):
 		#global team1Score
 		#global team2Score
                 print("Winner")
                 if (roundNumber % 2 == 0):
-			global team1Score
-#                        team1Score = int(team1Score) + 1
+                        print 'DEBUG #5: ', type(team1Score), repr(team1Score)
+                        team1Score = int(team1Score) + 1
+                        print 'DEBUG #6: ', type(team1Score), repr(team1Score)
                 else:
-#                        team2Score = int(team2Score) + 1
-			print team1Score
+                        team2Score = int(team2Score) + 1
 		saveRoundInfo()
         else:
                 print("Nope")
@@ -99,11 +99,12 @@ def startButton():
 
 #combines timer and openDrawing call
 def combo():
-        t=threading.Thread(target=openDrawing)
-        t.start()
+	pool = Pool(processes=3)
+#        t=threading.Thread(target=openDrawing)
+#        t.start()
 #       q=threading.Thread(target=tick)
 #       q.start()
-        tick()
+#        tick()
 #        f=threading.Thread(target=startButton)
 #        f.start()
 #       pool = Pool(processes=3)
@@ -121,7 +122,9 @@ def combo():
 
 def saveRoundInfo():
                 outf = open('roundInfo.txt', 'w')
-                outf.write(str(roundNumber)+','+str(team1Drawing)+','+str(team2Drawing)+','+str(team1Score)+','+str(team2Score))
+                outstr = str(roundNumber)+','+str(team1Drawing)+','+str(team2Drawing)+','+str(team1Score) +','+str(team2Score)
+                print 'DEBUG #1', outstr
+                outf.write(outstr)
                 outf.close()
 #		subprocess.call(['/home/pi/PiProject/Team2/killIt.sh'])
 #                subprocess.call(['killIt.sh'])
@@ -140,13 +143,16 @@ def main():
 
 	with open("roundInfo.txt","r") as ins:
                 lines = ins.readlines()
+                print 'DEBUG #2: ', lines
                 for line in lines:
 			words = line.split(",")
                         roundNumber = int(words[0])
 			team1Drawing = int(words[1])
 			team2Drawing = int(words[2])
-			team1Score = words[3]
-			team2Score = words[4]	
+			team1Score = int(words[3])
+			team2Score = int(words[4])
+                        print 'DEBUTG #3 t1s: ', team1Score
+                        print 'DEBUTG #4 t2s: ', team2Score
 
 	with open("drawThis.txt","r") as ins:
                 lines = ins.readlines()
@@ -210,10 +216,10 @@ def main():
         Button(root, fg='blue', text='Start', command=combo).pack()
 
         # create score labels
-        team1Score = Label(root, text=nameArray[0] + ' : ' + `team1Score`, font=("Helvetica", 56))
-        team2Score = Label(root, text=nameArray[3] + ' : ' + `team2Score`, font=("Helvetica", 56))
-        team1Score.place(x=550,y=750)
-        team2Score.place(x=950,y=750)
+        team1ScoreLbl = Label(root, text=nameArray[0] + ' : ' + `team1Score`, font=("Helvetica", 56))
+        team2ScoreLbl = Label(root, text=nameArray[3] + ' : ' + `team2Score`, font=("Helvetica", 56))
+        team1ScoreLbl.place(x=550,y=750)
+        team2ScoreLbl.place(x=950,y=750)
         root.mainloop()
 
 if __name__ == "__main__":
