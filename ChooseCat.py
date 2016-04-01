@@ -8,6 +8,7 @@ import random
 import GamePlay
 import loadArray
 import tkMessageBox as box
+import os
 
 #stores information saved from entry boxes
 cat = []
@@ -58,7 +59,7 @@ def selectCat1() :
 	array.remove(ChosenWord)
 	print array
 	print ChosenWord
-	var = box.showinfo('Draw This Word',ChosenWord)
+	#var = box.showinfo('Draw This Word',ChosenWord)
 	#open file which will save entries
         outf = open('category1.txt', 'w')
 	#send each user entry into the file
@@ -67,6 +68,7 @@ def selectCat1() :
 	outf = open('drawThis.txt', 'w')
 	print >>outf, ChosenWord
 	outf.close()
+	os.system('./SendMessage.py')
 	GamePlay.main()
 
 def selectCat2() :

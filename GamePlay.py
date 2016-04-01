@@ -4,16 +4,13 @@
 
 from Tkinter import *
 import threading
-import ChooseCat
-import NewMotion
 import tkSimpleDialog
-import startGame
-import subprocess
 import RPi.GPIO as GPIO
 import time
-import ChooseCat
 from multiprocessing import Process
 import os
+import tkMessageBox
+import WinnerLoser
 
 # even if the button has been pressed
 # off if the button has not been pressed
@@ -59,20 +56,16 @@ def check_guess(guess):
 	global team1Score
 	global team2Score
         if(guess == ChosenWord):
-                print("Winner")
-                if (roundNumber % 2 == 0):
+                tkMessageBox.showinfo("You got it dude!","Your guess is correct. Your team recieves one point")
+
+		if (roundNumber % 2 == 0):
                         team1Score = int(team1Score) + 1
                 else:
                         team2Score = int(team2Score) + 1
 		saveRoundInfo()
         else:
-                print("Nope")
-                print(guess)
-                print(ChosenWord)
+		tkMessageBox.showinfo("You didn't get it dude","Your guess is not correct. You recieve nothing :(")
 		saveRoundInfo()
-        if (roundNumber >= 4):
-                print "END OF GAME"
-                #call to winners page
 
 def startButton(number):
 	global button_pressed
@@ -140,6 +133,11 @@ def saveRoundInfo():
                 outstr = str(roundNumber)+','+str(team1Drawing)+','+str(team2Drawing)+','+str(team1Score) +','+str(team2Score)
                 outf.write(outstr)
                 outf.close()
+		if (roundNumber-1 >= 4):
+                	print "END OF GAME"
+                	#call to winners page
+                	WinnerLoser.main()
+
 		os.system('./killIt.sh')
 
 #calls timer and creates window
@@ -217,6 +215,10 @@ def main():
 
         # change round number
         roundNumber=roundNumber + 1
+#	if (roundNumber >= 4):
+ #       	print "END OF GAME"
+               #call to winners page
+#		WinnerLoser.main()
 
         global time
         time = Label(root, fg='green', font=("Helvetica", 76))
