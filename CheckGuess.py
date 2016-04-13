@@ -13,6 +13,7 @@ team1Score=0
 team2Score=0
 ChosenWord='nada'
 
+#
 def openFiles():
         global team1Drawing
         global team2Drawing
@@ -37,16 +38,19 @@ def openFiles():
                 for line in lines:
                         words = line.split()
                         ChosenWord = words[0]
+                        
+# save info pertaining to playing round
 def saveRoundInfo():
 		print str(roundNumber)+','+str(team1Drawing)+','+str(team2Drawing)+','+str(team1Score) +','+str(team2Score)
                 outf = open('roundInfo.txt', 'w')
                 outstr = str(roundNumber)+','+str(team1Drawing)+','+str(team2Drawing)+','+str(team1Score) +','+str(team2Score)
                 outf.write(outstr)
                 outf.close()
+                # when 4 rounds is over : display
                 if (roundNumber > 4):
                         print "END OF GAME"
-                        #call to winners page
                         WinnerLoser.main()
+                # or restart round
 		else:
 	                os.system('./killItAgain.sh')
 
@@ -60,18 +64,25 @@ def main():
         root.minsize(1780, 1080)
 	openFiles()
 	result = tkSimpleDialog.askstring("Ask Audience", "What is your guess?")
-
+	
+	# if team guesses word correctly : 
         if(result== ChosenWord):
+        	# message box is displayed
                 tkMessageBox.showinfo("You got it dude!","Your guess is correct. Your team recieves one point")
-
+		
+		# changes score
 		if (roundNumber % 2 == 0):
                         team1Score = int(team1Score) + 1
 			team1Drawing = team1Drawing + 1
                 else:
                         team2Score = int(team2Score) + 1
 			team2Drawing = team2Drawing +1
+                
                 saveRoundInfo()
+                
+        # if team guesses word incorrectly
         else:
+                # message box is displayed
                 tkMessageBox.showinfo("You didn't get it dude","Your guess is not correct. You recieve nothing :(")
 		saveRoundInfo()
 	
