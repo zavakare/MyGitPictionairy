@@ -7,7 +7,7 @@ from Tkinter import *
 import random
 import GamePlay
 import loadArray
-import tkMessageBox as box
+import tkMessageBox
 import os
 
 #stores information saved from entry boxes
@@ -46,91 +46,108 @@ def select():
 
 def selectCat1() :
 	array = []
-	with open("category1.txt","r") as ins:
-		lines = ins.readlines()
-                for line in lines:
-			words = line.split()
-			for word in words:
-                        	array.append(word)
+	if(os.stat("category1.txt").st_size==0):
+		tkMessageBox.showinfo("Error", "Empty category file. Game will now shutdown.")
+		os.system("./killAllPython.sh")
+	else:
+		with open("category1.txt","r") as ins:
+			lines = ins.readlines()
+                	for line in lines:
+				words = line.split()
+				for word in words:
+        	                	array.append(word)
 
-	ChosenWord=random.choice (array)
-	array.remove(ChosenWord)
-	#open file which will save entries
-        outf = open('category1.txt', 'w')
-	#send each user entry into the file
-        print>>outf, ' '.join(array)
-	outf.close()
-	outf = open('drawThis.txt', 'w')
-	print >>outf, ChosenWord
-	outf.close()
-	os.system('./SendMessage.py')
-	GamePlay.main()
+		ChosenWord=random.choice (array)
+#		array.remove(ChosenWord)
+		#open file which will save entries
+        	outf = open('category1.txt', 'w')
+		#send each user entry into the file
+        	print>>outf, ' '.join(array)
+		outf.close()
+		outf = open('drawThis.txt', 'w')
+		print >>outf, ChosenWord
+		outf.close()
+		os.system('./SendMessage.py')
+		GamePlay.main()
 
 def selectCat2() :
         array = []
-        with open("category2.txt","r") as ins:
-                lines = ins.readlines()
-                for line in lines:
-                        words = line.split()
-                        for word in words:
-                                array.append(word)
+        if(os.stat("category2.txt").st_size==0):
+                tkMessageBox.showinfo("Error", "Empty category file. Game will now shutdown.")
+                os.system("./killAllPython.sh")
+        else:
+	        with open("category2.txt","r") as ins:
+        	        lines = ins.readlines()
+                	for line in lines:
+                        	words = line.split()
+	                        for word in words:
+        	                        array.append(word)
 
-        ChosenWord=random.choice (array)
-        array.remove(ChosenWord)
-        #open file which will save entries
-        outf = open('category1.txt', 'w')
-        #send each user entry into the file
-        print>>outf, ' '.join(array)
-        outf.close()
-        outf = open('drawThis.txt', 'w')
-        print >>outf, ChosenWord
-        outf.close()
-        os.system('./SendMessage.py')
-        GamePlay.main()
+	        ChosenWord=random.choice (array)
+	#        array.remove(ChosenWord)
+        	#open file which will save entries
+	        outf = open('category1.txt', 'w')
+        	#send each user entry into the file
+	        print>>outf, ' '.join(array)
+	        outf.close()
+        	outf = open('drawThis.txt', 'w')
+	        print >>outf, ChosenWord
+        	outf.close()
+	        os.system('./SendMessage.py')
+	        GamePlay.main()
 	
 def selectCat3() :
         array = []
-        with open("category3.txt","r") as ins:
-                lines = ins.readlines()
-                for line in lines:
-                        words = line.split()
-                        for word in words:
-                                array.append(word)
+        if(os.stat("category3.txt").st_size==0):
+                tkMessageBox.showinfo("Error", "Empty category file. Game will now shutdown.")
+                os.system("./killAllPython.sh")
+        else:
+	        with open("category3.txt","r") as ins:
+        	        lines = ins.readlines()
+                	for line in lines:
+	                        words = line.split()
+        	                for word in words:
+                	                array.append(word)
 
-        ChosenWord=random.choice (array)
-        array.remove(ChosenWord)
-        #open file which will save entries
-        outf = open('category1.txt', 'w')
-        #send each user entry into the file
-        print>>outf, ' '.join(array)
-        outf.close()
-        outf = open('drawThis.txt', 'w')
-        print >>outf, ChosenWord
-        outf.close()
-        os.system('./SendMessage.py')
-        GamePlay.main()        
+	        ChosenWord=random.choice (array)
+	#        array.remove(ChosenWord)
+	        #open file which will save entries
+	        outf = open('category1.txt', 'w')
+	        #send each user entry into the file
+	        print>>outf, ' '.join(array)
+	        outf.close()
+	        outf = open('drawThis.txt', 'w')
+	        print >>outf, ChosenWord
+	        outf.close()
+	        os.system('./SendMessage.py')
+	        GamePlay.main()        
 	
 def selectCat4() :
         array = []
-        with open("category4.txt","r") as ins:
-                lines = ins.readlines()
-                for line in lines:
-                        words = line.split()
-                        for word in words:
-                                array.append(word)
+	if(os.stat("category4.txt").st_size==0):
+                tkMessageBox.showinfo("Error", "Empty category file. Game will now shutdown.")
+                os.system("./killAllPython.sh")
+        else:
 
-        ChosenWord=random.choice (array)
-        array.remove(ChosenWord)
-        #open file which will save entries
-        outf = open('category1.txt', 'w')
-        #send each user entry into the file
-        print>>outf, ' '.join(array)
-        outf.close()
-        outf = open('drawThis.txt', 'w')
-        print >>outf, ChosenWord
-        outf.close()
-        os.system('./SendMessage.py')
-        GamePlay.main()
+	        with open("category4.txt","r") as ins:
+        	        lines = ins.readlines()
+	                for line in lines:
+	                        words = line.split()
+	                        for word in words:
+	                                array.append(word)
+
+        	ChosenWord=random.choice (array)
+	#        array.remove(ChosenWord)
+	        #open file which will save entries
+	        outf = open('category1.txt', 'w')
+	        #send each user entry into the file
+	        print>>outf, ' '.join(array)
+	        outf.close()
+	        outf = open('drawThis.txt', 'w')
+	        print >>outf, ChosenWord
+	        outf.close()
+	        os.system('./SendMessage.py')
+	        GamePlay.main()
 
 if __name__ == "__main__":
 	select()
