@@ -18,6 +18,7 @@ def select():
         # initialize window size, title
         root = Tk()
         root.minsize(1780,1080)
+	root.configure(bg =  "Purple" )
         myvar = StringVar()
         root.title('Choose a category!')
 	
