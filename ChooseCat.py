@@ -14,6 +14,7 @@ import os
 cat = []
 global ChosenWord
 
+#creates choose category window
 def select():
         # initialize window size, title
         root = Tk()
@@ -43,8 +44,9 @@ def select():
 	root.mainloop()
 
 
-#picks random word to draw from specific array, removes that word from array, and displays chosen word in message box
-
+#picks random word to draw from specific array
+#removes that word from array, and sends chosen word to touchscreen
+# if category is empty, game automatically shuts down
 def selectCat1() :
 	array = []
 	if(os.stat("category1.txt").st_size==0):
@@ -59,7 +61,6 @@ def selectCat1() :
         	                	array.append(word)
 
 		ChosenWord=random.choice (array)
-#		array.remove(ChosenWord)
 		#open file which will save entries
         	outf = open('category1.txt', 'w')
 		#send each user entry into the file
@@ -85,7 +86,6 @@ def selectCat2() :
         	                        array.append(word)
 
 	        ChosenWord=random.choice (array)
-	#        array.remove(ChosenWord)
         	#open file which will save entries
 	        outf = open('category1.txt', 'w')
         	#send each user entry into the file
@@ -111,7 +111,6 @@ def selectCat3() :
                 	                array.append(word)
 
 	        ChosenWord=random.choice (array)
-	#        array.remove(ChosenWord)
 	        #open file which will save entries
 	        outf = open('category1.txt', 'w')
 	        #send each user entry into the file
@@ -138,7 +137,6 @@ def selectCat4() :
 	                                array.append(word)
 
         	ChosenWord=random.choice (array)
-	#        array.remove(ChosenWord)
 	        #open file which will save entries
 	        outf = open('category1.txt', 'w')
 	        #send each user entry into the file

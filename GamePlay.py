@@ -49,6 +49,7 @@ def tick():
 	                # Take advantage of the after method of the Label
         	        time.after(1000, tick)
 
+#when button is pressed, it opens a guess window
 def startButton(number):
 	global button_pressed
         GPIO.setmode(GPIO.BCM)
@@ -59,18 +60,14 @@ def startButton(number):
 			saveRoundInfo()
 			os.system('./killIt.sh')
          	        button_pressed+=1
-#			time.sleep(0.2)
 
+# saves round information to external file and begins next round
 def saveRoundInfo():
 		print "Here it is #3:" + str(roundNumber)+','+str(team1Drawing)+','+str(team2Drawing)+','+str(team1Score) +','+str(team2Score)
                 outf = open('roundInfo.txt', 'w')
                 outstr = str(roundNumber)+','+str(team1Drawing)+','+str(team2Drawing)+','+str(team1Score) +','+str(team2Score)
                 outf.write(outstr)
                 outf.close()
-#		if (roundNumber-1 >= 4):
-#                	print "END OF GAME"
-                	#call to winners page
-#                	WinnerLoser.main()
 
 		os.system('./killIt.sh')
 
@@ -125,21 +122,24 @@ def mainGUI(num):
         if (roundNumber % 2 == 0): #even
                 teamDrawing = Label(root, text='Hey Team ' + nameArray[3] + ', your turn to draw.', font=("Helvetica", 26))
                 teamDrawing.pack()
-	                # determines which team member is drawing this round
+	               
+		# determines which team member is drawing this round
                 if (team2Drawing  % 2 == 0): #even
                         teamMemberDrawing = Label(root, text=nameArray[5] + ' you''re up!', font=("Helvetica", 26))
                         teamMemberDrawing.pack()
                 else:
                         teamMemberDrawing = Label(root, text=nameArray[4] + ' you''re up!', font=("Helvetica", 26))
                         teamMemberDrawing.pack()
-                # change next drawing member for team
+                
+		# change next drawing member for team
                 team2Drawing=team2Drawing + 1
 
 
         else: #odd
                 teamDrawing = Label(root, text='Hey Team ' + nameArray[0] + ', your turn to draw.', font=("Helvetica", 26))
                 teamDrawing.pack()
-                # determines which team member is drawing this round
+                
+		# determines which team member is drawing this round
                 if (team1Drawing  % 2 == 0): #even
                         teamMemberDrawing = Label(root, text=nameArray[2] + ' you''re up!', font=("Helvetica", 26))
                         teamMemberDrawing.pack()
@@ -148,13 +148,6 @@ def mainGUI(num):
                         teamMemberDrawing.pack()
                 # change next drawing member for team
                 team1Drawing=team1Drawing + 1
-
-        # change round number
-#        roundNumber=roundNumber + 1
-#	if (roundNumber >= 4):
- #       	print "END OF GAME"
-               #call to winners page
-#		WinnerLoser.main()
 
         global time
         time = Label(root, fg='green', font=("Helvetica", 76))
@@ -197,8 +190,6 @@ def main():
 	buttonP = Process(target=startButton, args=(0,))
         openSim = Process(target=openDrawing, args=(0,))
 	loadG = Process(target=mainGUI, args=(0,))
-        #startT = Process(target=tick, args=(0,))
-        #startT.start()
         buttonP.start()
         openSim.start()
 	loadG.start()

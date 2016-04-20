@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+#recieves message
+
 import socket
 from Tkinter import *
 import reciever

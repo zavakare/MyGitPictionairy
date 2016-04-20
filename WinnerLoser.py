@@ -1,7 +1,10 @@
 #!/usr/bin/env python
 
+#window displays results of game after four rounds
+
 from Tkinter import *
 
+# determines final score, winner/loser, and displays it
 def whoWins():
         global team1Score
         global team2Score

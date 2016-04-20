@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+#determines whether answer matches chosenWord and saves round info
+
 from Tkinter import *
 import tkSimpleDialog
 import tkMessageBox
@@ -13,7 +15,7 @@ team1Score=0
 team2Score=0
 ChosenWord='nada'
 
-
+# opens files to determine current round, score, and who's turn it is
 def openFiles():
         global team1Drawing
         global team2Drawing
@@ -33,6 +35,7 @@ def openFiles():
                         team1Score = int(words[3])
                         team2Score = int(words[4])
 
+	#determines chosen word
         with open("drawThis.txt","r") as ins:
                 lines = ins.readlines()
                 for line in lines:
@@ -46,6 +49,7 @@ def saveRoundInfo():
                 outstr = str(roundNumber+1)+','+str(team1Drawing)+','+str(team2Drawing)+','+str(team1Score) +','+str(team2Score)
                 outf.write(outstr)
                 outf.close()
+
                 # when 4 rounds is over : display
                 if (roundNumber+1 > 4):
                         print "END OF GAME"
@@ -73,11 +77,10 @@ def main():
 		# changes score
 		if (roundNumber % 2 == 0):
                         team2Score = int(team2Score) + 1
-#			team1Drawing = team1Drawing + 1
                 else:
                         team1Score = int(team1Score) + 1
-#			team2Drawing = team2Drawing +1
                 
+		#saves all information in round
                 saveRoundInfo()
                 
         # if team guesses word incorrectly
@@ -90,4 +93,3 @@ def main():
 
 if __name__ == "__main__":
         main()
-
