@@ -49,7 +49,7 @@ def openGame():
 
 #closes window
 def closewindow():
-	exit()
+        exit()
 
 def rulesExit():
 	rulesWin.exit()
