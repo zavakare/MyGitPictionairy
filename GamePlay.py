@@ -28,7 +28,7 @@ def openDrawing(nm):
 	os.system('./NewMotion.py')
 
 #sets clock to 45 seconds
-sec = 5 
+sec = 45 
 
 #creates timer and creates dialog that checks guess word with chosen word
 def tick():

@@ -10,24 +10,31 @@ import loadArray
 import tkMessageBox
 import os
 
+
+
 #stores information saved from entry boxes
 cat = []
 global ChosenWord
+
+
 
 #creates choose category window
 def select():
         # initialize window size, title
         root = Tk()
         root.minsize(1780,1080)
+	#Using Label to display our imgTitle
+	CatHeader = Label(root, text = 'Choose a Category...', bg = "Purple", font=("Georgia", 100) )
+        CatHeader.pack()
 	root.configure(bg =  "Purple" )
         myvar = StringVar()
         root.title('Choose a category!')
 	
 	#creates main menu  buttons
-	button = Button(root, text="Animals", command=selectCat1, font=("Georgia", 40))
-	button2 = Button(root, text="Computer", command=selectCat2, font=("Georgia", 40))
-	button3 = Button(root, text="Food", command=selectCat3, font=("Georgia", 40))
-	button4 = Button(root, text="Objects", command=selectCat4, font=("Georgia", 40))
+	button = Button(root, text="Animals", command=selectCat1,font=("Georgia", 40), bg="Black", fg="White" )
+	button2 = Button(root, text="Computer", command=selectCat2, font=("Georgia", 40), bg="Black", fg="White")
+	button3 = Button(root, text="Food", command=selectCat3, font=("Georgia", 40), bg="Black", fg="White")
+	button4 = Button(root, text="Objects", command=selectCat4, font=("Georgia", 40), bg="Black", fg="White" )
 	
 	#size of buttons
 	button.config(height=3, width=7)

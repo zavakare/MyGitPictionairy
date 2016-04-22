@@ -43,18 +43,18 @@ def main():
 	Ending.title("Game Over")
 
 	#create title text and default place on screen
-	title = Label(Ending, text='Game Over', font=("Helvetica", 76), fg="Black", bg = "Purple")
+	title = Label(Ending, text='Game Over', font=("Verdana", 100), fg="Black", bg = "Purple")
 	title.pack()
 	whoWins()
 	if (team1Score > team2Score):
-		team1Wins = Label(Ending, text='Team ' + `team1Name` + ' you win!', font=("Helvetica", 76), fg="Black", bg="Purple")
+		team1Wins = Label(Ending, text='Team ' + `team1Name` + ' you win!', font=("Helvetica", 100), fg="Black", bg="Purple")
 		team1Wins.pack()
 	elif (team2Score > team1Score):
-		team2Wins = Label(Ending, text='Team ' + `team2Name` + ' you win!', font=("Helvetica", 76), fg="Black", bg="Purple")
+		team2Wins = Label(Ending, text='Team ' + `team2Name` + ' you win!', font=("Helvetica", 100), fg="Black", bg="Purple")
 		team2Wins.pack()
 	# tells who won the game and who lost, or if there was a tie
 	else:
-		teamsTie = Label(Ending, text='No one wins! It is a tie:/', font=("Helvetica", 76), fg="Black", bg="Purple")
+		teamsTie = Label(Ending, text='No one wins! It is a tie:/', font=("Helvetica", 100), fg="Black", bg="Purple")
                 teamsTie.pack()
 
 

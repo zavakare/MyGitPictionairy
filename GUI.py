@@ -22,8 +22,6 @@ imgAboutB = Image.open("AboutUsButton.gif")
 renderAbout = ImageTk.PhotoImage(imgAboutB)
 imgExitB = Image.open("ExitButton.gif")
 renderExit = ImageTk.PhotoImage(imgExitB)
-imgAboutUs = Image.open("abtus.gif")
-renderAboutUS = ImageTk.PhotoImage(imgAboutUs)
 
 
 
@@ -89,17 +87,13 @@ def aboutus():
 	AboutWin = Tk()
         AboutWin.minsize(1200,800)
 	AboutWin.configure(bg =  "Purple" )
+
         AboutHeader = Label(AboutWin, text = 'About Us', bg = "Purple", font=("Georgia", 30) )
         AboutHeader.pack()
         AboutUsText = Label(AboutWin, text = 'The game pictionAIRy was made over the course of the spring 2016 semester. Made by Alex, Mary, Theodora, Sam, and Karen.\n All of the group members are currently computer science majors, which attend Dominican University in River Forest.\n The project was for CPSC 431, Principles of Unix and Professor Bonakdarian. \n The group managed the time wisely and had a lot of fun making the project. ', bg = "Purple", font=("Georgia", 17))
         AboutUsText.pack()
-	#button5 = Button(AboutWin, image=renderAboutUS, command=closewindow)
-	#button5.config(height=400, width=400)
-	#button5.place(x=420, y=620)
-	#img2 = Label(AboutWin, image=renderAboutUS)
-	#img2.image = renderAboutUS
-	#img2.place(x=400,y=200)
-
+	
+	
 
 #creates main menu  buttons
 button = Button(root, image=renderExit, command=closewindow, bg="Purple")
