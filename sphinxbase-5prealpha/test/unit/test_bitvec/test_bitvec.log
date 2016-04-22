@@ -1,9 +1,0 @@
-<<<<<<< HEAD
-1000000 * 199 bitvec_count_set in 0.33 sec
-50000 * 1314 bitvec_set in 0.59 sec
-=======
-1000000 * 199 bitvec_count_set in 0.49 sec
-50000 * 1314 bitvec_set in 0.89 sec
->>>>>>> remotes/origin/AudioDevelopment
-Bits set 6
-Bits set after realloc 6
