@@ -7,7 +7,7 @@ import GamePlay
 import startGame
 
 def arrayOne():
-	with open("category1.txt","r") as ins:
+	with open("Categories/category1.txt","r") as ins:
 		lines = ins.readlines()
                 global array 
 		array = []
@@ -17,7 +17,7 @@ def arrayOne():
                         	array.append(word)
 
 def arrayTwo():
-	with open("category2.txt","r") as ins:
+	with open("Categories/category2.txt","r") as ins:
 		lines = ins.readlines()
                 global array2
                 array2 = []
@@ -26,7 +26,7 @@ def arrayTwo():
                         for word in words:
                                 array2.append(word)
 def arrayThree():
-        with open("category3.txt","r") as ins:
+        with open("Categories/category3.txt","r") as ins:
 		lines = ins.readlines()
                 global array3
                 array3 = []
@@ -36,7 +36,7 @@ def arrayThree():
                                 array3.append(word)
 
 def arrayFour():
-        with open("category4.txt","r") as ins:
+        with open("Categories/category4.txt","r") as ins:
 		lines = ins.readlines()
                 global array4
                 array4 = []

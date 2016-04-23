@@ -60,7 +60,7 @@ def selectCat1() :
 		tkMessageBox.showinfo("Error", "Empty category file. Game will now shutdown.")
 		os.system("./killAllPython.sh")
 	else:
-		with open("category1.txt","r") as ins:
+		with open("Categories/category1.txt","r") as ins:
 			lines = ins.readlines()
                 	for line in lines:
 				words = line.split()
@@ -69,7 +69,7 @@ def selectCat1() :
 
 		ChosenWord=random.choice (array)
 		#open file which will save entries
-        	outf = open('category1.txt', 'w')
+        	outf = open('Categories/category1.txt', 'w')
 		#send each user entry into the file
         	print>>outf, ' '.join(array)
 		outf.close()
@@ -85,7 +85,7 @@ def selectCat2() :
                 tkMessageBox.showinfo("Error", "Empty category file. Game will now shutdown.")
                 os.system("./killAllPython.sh")
         else:
-	        with open("category2.txt","r") as ins:
+	        with open("Categories/category2.txt","r") as ins:
         	        lines = ins.readlines()
                 	for line in lines:
                         	words = line.split()
@@ -94,7 +94,7 @@ def selectCat2() :
 
 	        ChosenWord=random.choice (array)
         	#open file which will save entries
-	        outf = open('category1.txt', 'w')
+	        outf = open('Categories/category2.txt', 'w')
         	#send each user entry into the file
 	        print>>outf, ' '.join(array)
 	        outf.close()
@@ -110,7 +110,7 @@ def selectCat3() :
                 tkMessageBox.showinfo("Error", "Empty category file. Game will now shutdown.")
                 os.system("./killAllPython.sh")
         else:
-	        with open("category3.txt","r") as ins:
+	        with open("Categories/category3.txt","r") as ins:
         	        lines = ins.readlines()
                 	for line in lines:
 	                        words = line.split()
@@ -119,7 +119,7 @@ def selectCat3() :
 
 	        ChosenWord=random.choice (array)
 	        #open file which will save entries
-	        outf = open('category1.txt', 'w')
+	        outf = open('Categories/category3.txt', 'w')
 	        #send each user entry into the file
 	        print>>outf, ' '.join(array)
 	        outf.close()
@@ -136,7 +136,7 @@ def selectCat4() :
                 os.system("./killAllPython.sh")
         else:
 
-	        with open("category4.txt","r") as ins:
+	        with open("Categories/category4.txt","r") as ins:
         	        lines = ins.readlines()
 	                for line in lines:
 	                        words = line.split()
@@ -145,7 +145,7 @@ def selectCat4() :
 
         	ChosenWord=random.choice (array)
 	        #open file which will save entries
-	        outf = open('category1.txt', 'w')
+	        outf = open('Categories/category4.txt', 'w')
 	        #send each user entry into the file
 	        print>>outf, ' '.join(array)
 	        outf.close()
