@@ -3,6 +3,8 @@
 # master branch
 * .gitignore : extensions of files to not be added/committed
 
+* Categories: contains text files of each category and words which will be drawn
+
 * CheckGuess.py : after the user makes a guess, their answer is checked against the correct answer
 
 * ChooseCat.py : players are able to choose which category they would like to draw from
