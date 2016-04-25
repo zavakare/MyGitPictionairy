@@ -15,15 +15,15 @@ root.minsize(1780, 1080)
 
 
 #Opening the images
-imgTitle = Image.open("pictionary.gif")
+imgTitle = Image.open("allImages/pictionary.gif")
 render = ImageTk.PhotoImage(imgTitle)
-imgStartB = Image.open("StartButton.gif")
+imgStartB = Image.open("allImages/StartButton.gif")
 renderStart = ImageTk.PhotoImage(imgStartB)
-imgRulesB = Image.open("RulesButton.gif")
+imgRulesB = Image.open("allImages/RulesButton.gif")
 renderRules = ImageTk.PhotoImage(imgRulesB)
-imgAboutB = Image.open("AboutUsButton.gif")
+imgAboutB = Image.open("allImages/AboutUsButton.gif")
 renderAbout = ImageTk.PhotoImage(imgAboutB)
-imgExitB = Image.open("ExitButton2.gif")
+imgExitB = Image.open("allImages/ExitButton2.gif")
 renderExit = ImageTk.PhotoImage(imgExitB)
 
 
@@ -64,7 +64,7 @@ def listrules():
 	rulesWin.minsize(1400,800)
 	rulesWin.configure(bg =  "Purple" )
 	
-	rulesImg = Image.open("RulesListed.gif")
+	rulesImg = Image.open("allImages/RulesListed.gif")
 	renderRules = ImageTk.PhotoImage(rulesImg)
 
 	imgRulesListed = Label(rulesWin, image=renderRules,bg =  "Purple" )
@@ -77,14 +77,14 @@ def aboutus():
 	AboutWin.minsize(1200,800)
         AboutWin.configure(bg =  "Purple" )
 
-	imgTitleAbout = Image.open("AboutUsPgTitle.gif")
+	imgTitleAbout = Image.open("allImages/AboutUsPgTitle.gif")
         renderTitleAbout = ImageTk.PhotoImage(imgTitleAbout)
 
         imgAboutTitle = Label(AboutWin, image=renderTitleAbout,bg =  "Purple" )
         imgAboutTitle.image = renderTitleAbout
         imgAboutTitle.pack()
 
-	imgTitleTeam = Image.open("groupImageInfo.gif")
+	imgTitleTeam = Image.open("allImages/groupImageInfo.gif")
 	renderImageTeam = ImageTk.PhotoImage(imgTitleTeam)
 
 	imgTeam = Label(AboutWin, image=renderImageTeam,bg =  "Purple" )

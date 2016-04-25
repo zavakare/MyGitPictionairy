@@ -26,7 +26,7 @@ def select():
         categoryPage = Toplevel()
        	categoryPage.minsize(1780,1080)
 	
-	imgCategory = Image.open("CategoryTitle.gif")
+	imgCategory = Image.open("allImages/CategoryTitle.gif")
 	renderCategory = ImageTk.PhotoImage(imgCategory)
 	
 	#Using Label to display our imgTitle
@@ -43,13 +43,13 @@ def select():
 
 
 	#opening Images
-	imgAnimals = Image.open("AnimalsButton.gif")
+	imgAnimals = Image.open("allImages/AnimalsButton.gif")
         renderAnimals = ImageTk.PhotoImage(imgAnimals)
-	imgComputer = Image.open("ComputerButton.gif")
+	imgComputer = Image.open("allImages/ComputerButton.gif")
         renderComputer = ImageTk.PhotoImage(imgComputer)
-	imgFood = Image.open("foodButton.gif")
+	imgFood = Image.open("allImages/foodButton.gif")
         renderFood = ImageTk.PhotoImage(imgFood)
-	imgObject = Image.open("ObjectButton.gif")
+	imgObject = Image.open("allImages/ObjectButton.gif")
         renderObject = ImageTk.PhotoImage(imgObject)
 
 	#creates main menu  buttons

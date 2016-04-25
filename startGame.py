@@ -42,20 +42,20 @@ def mainStart():
 	start.title('It is time to make our teams!')
 
 	#Team Title 
-	imgTeamT = Image.open("TeamTitle.gif")
+	imgTeamT = Image.open("allImages/TeamTitle.gif")
 	renderTeamT = ImageTk.PhotoImage(imgTeamT)
 	imgTitleT = Label(start, image=renderTeamT,bg =  "Purple" )
 	imgTitleT.image = renderTeamT
 	imgTitleT.pack()
 
-	Team1Title = Image.open("TeamOne.gif")
+	Team1Title = Image.open("allImages/TeamOne.gif")
         renderTeam1Title = ImageTk.PhotoImage(Team1Title)
         imgTeam1Title = Label(start, image=renderTeam1Title,bg =  "Purple" )
         imgTeam1Title.image = renderTeam1Title
         imgTeam1Title.place(x=250,y=200)
 
 	#team 1 enters team name
-	Team1 = Image.open("EnterTeamBlue.gif")
+	Team1 = Image.open("allImages/EnterTeamBlue.gif")
         renderTeam1 = ImageTk.PhotoImage(Team1)
         imgTeam1 = Label(start, image=renderTeam1,bg =  "Purple" )
         imgTeam1.image = renderTeam1
@@ -67,7 +67,7 @@ def mainStart():
 	
 
 	#team 1 player 1 enters own name
-	Team1Player1 = Image.open("Player1Green.gif")
+	Team1Player1 = Image.open("allImages/Player1Green.gif")
         renderTeam1Player1 = ImageTk.PhotoImage(Team1Player1)
 
         imgTeam1Player1 = Label(start, image=renderTeam1Player1,bg =  "Purple" )
@@ -79,7 +79,7 @@ def mainStart():
 
 
 	#team 1 player 2 enters own name
-	Team1Player2 = Image.open("Player2Pink.gif")
+	Team1Player2 = Image.open("allImages/Player2Pink.gif")
         renderTeam1Player2 = ImageTk.PhotoImage(Team1Player2)
 
 	imgTeam1Player2 = Label(start, image=renderTeam1Player2,bg =  "Purple" )
@@ -91,7 +91,7 @@ def mainStart():
 
 
 	#Team 2 Title
-	Team2Title = Image.open("TeamTwo.gif")
+	Team2Title = Image.open("allImages/TeamTwo.gif")
         renderTeam2Title = ImageTk.PhotoImage(Team2Title)
         imgTeam2Title = Label(start, image=renderTeam2Title,bg =  "Purple" )
         imgTeam2Title.image = renderTeam1Title
@@ -99,7 +99,7 @@ def mainStart():
 
 
 	#team 2 enters name
-	Team2 = Image.open("EnterTeamYellow.gif")
+	Team2 = Image.open("allImages/EnterTeamYellow.gif")
         renderTeam2 = ImageTk.PhotoImage(Team2)
 
         imgTeam2 = Label(start, image=renderTeam2,bg =  "Purple" )
@@ -111,7 +111,7 @@ def mainStart():
 
 
 	#team 2 player 1 enters own name
-	Team2Player1 = Image.open("Player1Blue.gif")
+	Team2Player1 = Image.open("allImages/Player1Blue.gif")
         renderTeam2Player1 = ImageTk.PhotoImage(Team2Player1)
 
         imgTeam2Player1 = Label(start, image=renderTeam2Player1,bg =  "Purple" )
@@ -122,7 +122,7 @@ def mainStart():
 	t2player1Entry.place(x=1050,y=530)
 
 	#team 2 player 2 enters own name
-	Team2Player2 = Image.open("Player2Orange.gif")
+	Team2Player2 = Image.open("allImages/Player2Orange.gif")
         renderTeam2Player2 = ImageTk.PhotoImage(Team2Player2)
 
         imgTeam2Player2 = Label(start, image=renderTeam2Player2,bg =  "Purple" )
@@ -162,7 +162,7 @@ def mainStart():
 		ChooseCat.select()
 	
 
-	imgButtonR = Image.open("readyToPlayButton.gif")
+	imgButtonR = Image.open("allImages/readyToPlayButton.gif")
 	renderReady = ImageTk.PhotoImage(imgButtonR)
 
 	#Ready to Play button
