@@ -9,6 +9,8 @@ import GamePlay
 import loadArray
 import tkMessageBox
 import os
+from PIL import Image, ImageTk
+
 
 
 
@@ -21,34 +23,54 @@ global ChosenWord
 #creates choose category window
 def select():
         # initialize window size, title
-        root = Tk()
-        root.minsize(1780,1080)
-	#Using Label to display our imgTitle
-	CatHeader = Label(root, text = 'Choose a Category...', bg = "Purple", font=("Georgia", 100) )
-        CatHeader.pack()
-	root.configure(bg =  "Purple" )
-        myvar = StringVar()
-        root.title('Choose a category!')
+        categoryPage = Toplevel()
+       	categoryPage.minsize(1780,1080)
 	
+	imgCategory = Image.open("CategoryTitle.gif")
+	renderCategory = ImageTk.PhotoImage(imgCategory)
+	
+	#Using Label to display our imgTitle
+	imgCategoryL = Label(categoryPage, image=renderCategory,bg =  "Purple" )
+	imgCategoryL.image = renderCategory
+	imgCategoryL.place(x=300,y=40)
+
+
+
+	categoryPage.configure(bg =  "Purple" )
+        myvar = StringVar()
+        categoryPage.title('Choose a category!')
+	
+
+
+	#opening Images
+	imgAnimals = Image.open("AnimalsButton.gif")
+        renderAnimals = ImageTk.PhotoImage(imgAnimals)
+	imgComputer = Image.open("ComputerButton.gif")
+        renderComputer = ImageTk.PhotoImage(imgComputer)
+	imgFood = Image.open("foodButton.gif")
+        renderFood = ImageTk.PhotoImage(imgFood)
+	imgObject = Image.open("ObjectButton.gif")
+        renderObject = ImageTk.PhotoImage(imgObject)
+
 	#creates main menu  buttons
-	button = Button(root, text="Animals", command=selectCat1,font=("Georgia", 40), bg="Black", fg="White" )
-	button2 = Button(root, text="Computer", command=selectCat2, font=("Georgia", 40), bg="Black", fg="White")
-	button3 = Button(root, text="Food", command=selectCat3, font=("Georgia", 40), bg="Black", fg="White")
-	button4 = Button(root, text="Objects", command=selectCat4, font=("Georgia", 40), bg="Black", fg="White" )
+	button = Button(categoryPage, image=renderAnimals, command=selectCat1,bg = "Purple" )
+	button2 = Button(categoryPage, image=renderComputer, command=selectCat2, bg = "Purple")
+	button3 = Button(categoryPage, image=renderFood, command=selectCat3, bg = "Purple")
+	button4 = Button(categoryPage, image=renderObject, command=selectCat4, bg = "Purple")
 	
 	#size of buttons
-	button.config(height=3, width=7)
-	button2.config(height=3, width=7)
-	button3.config(height=3, width=7)
-	button4.config(height=3, width=7)
+	button.config(height=200, width=400)
+	button2.config(height=200, width=400)
+	button3.config(height=200, width=400)
+	button4.config(height=200, width=400)
 
 	#placing of button
-	button3.place(x=520, y=320)
+	button3.place(x=420, y=320)
 	button2.place(x=920, y=320)
-	button4.place(x=520, y=520)
-	button.place(x=920, y=520)
+	button4.place(x=420, y=620)
+	button.place(x=920, y=620)
 
-	root.mainloop()
+	categoryPage.mainloop()
 
 
 #picks random word to draw from specific array

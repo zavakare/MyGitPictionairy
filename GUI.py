@@ -8,6 +8,9 @@ from PIL import Image, ImageTk
 
 #create blank window and set minimum size
 root = Tk()
+frame = Frame(root)
+frame.pack()
+
 root.minsize(1780, 1080)
 
 
@@ -20,7 +23,7 @@ imgRulesB = Image.open("RulesButton.gif")
 renderRules = ImageTk.PhotoImage(imgRulesB)
 imgAboutB = Image.open("AboutUsButton.gif")
 renderAbout = ImageTk.PhotoImage(imgAboutB)
-imgExitB = Image.open("ExitButton.gif")
+imgExitB = Image.open("ExitButton2.gif")
 renderExit = ImageTk.PhotoImage(imgExitB)
 
 
@@ -57,43 +60,37 @@ def rulesExit():
 
 #Rules window
 def listrules():
-	rulesWin = Tk()
-	rulesWin.minsize(1200,800)
+	rulesWin = Toplevel()
+	rulesWin.minsize(1400,800)
 	rulesWin.configure(bg =  "Purple" )
-	RuleHeader = Label(rulesWin, text = 'Rules Listed', bg = "Purple", font=("Georgia", 30) )
-	RuleHeader.pack()
-	Rule1 = Label(rulesWin, text = '1.Separate into 2 teams, each team consisting of 2 people, and enter your team names. ', bg = "Purple", font=("Georgia", 17)  )
-	Rule1.pack()
-	Rule2 = Label(rulesWin, text = '2.Pick 1 player to begin and choose your drawing category. ', bg = "Purple", font=("Georgia", 17)  )
-        Rule2.pack()
-	Rule3 = Label(rulesWin, text = '3.Player 1 gets word to draw and gets tracking device to put on the dominate hand. ', bg = "Purple", font=("Georgia", 17))
-        Rule3.pack()
-	Rule4 = Label(rulesWin, text = '4.Stand in front of web cam and draw. You will have 45 seconds to draw this.  ', bg = "Purple", font=("Georgia", 17) )
-        Rule4.pack()
-	Rule5 = Label(rulesWin, text = '5.You will have unlimited unoffical guesses and one offical guess.  You will offically guess by hitting the buzzer and saying your answer out loud. ', bg = "Purple", font=("Georgia", 17)  )
-        Rule5.pack()
-	Rule6 = Label(rulesWin, text = '6.The team will get the point if the guess is correct.  The Team at the end of 3 rounds with the most points will win! ', bg = "Purple", font=("Georgia", 17)  )
-        Rule6.pack()
-	#rulesButton = Button(rulesWin, text="Go BaCk", command=closewindow, font=("Georgia", 40))
-	#rulesButton.pack()
-	rulesButton = Button(rulesWin, text = 'Quit', command=rulesWin.quit)
-	rulesButton.pack()
-	#self.root.mainloop()
+	
+	rulesImg = Image.open("RulesListed.gif")
+	renderRules = ImageTk.PhotoImage(rulesImg)
 
-def quit():
-       rulesWin.destroy()
+	imgRulesListed = Label(rulesWin, image=renderRules,bg =  "Purple" )
+	imgRulesListed.image = renderRules
+	imgRulesListed.place(x=80,y=20)
+	
 
 def aboutus():
-	AboutWin = Tk()
-        AboutWin.minsize(1200,800)
-	AboutWin.configure(bg =  "Purple" )
+	AboutWin = Toplevel()
+	AboutWin.minsize(1200,800)
+        AboutWin.configure(bg =  "Purple" )
 
-        AboutHeader = Label(AboutWin, text = 'About Us', bg = "Purple", font=("Georgia", 30) )
-        AboutHeader.pack()
-        AboutUsText = Label(AboutWin, text = 'The game pictionAIRy was made over the course of the spring 2016 semester. Made by Alex, Mary, Theodora, Sam, and Karen.\n All of the group members are currently computer science majors, which attend Dominican University in River Forest.\n The project was for CPSC 431, Principles of Unix and Professor Bonakdarian. \n The group managed the time wisely and had a lot of fun making the project. ', bg = "Purple", font=("Georgia", 17))
-        AboutUsText.pack()
-	
-	
+	imgTitleAbout = Image.open("AboutUsPgTitle.gif")
+        renderTitleAbout = ImageTk.PhotoImage(imgTitleAbout)
+
+        imgAboutTitle = Label(AboutWin, image=renderTitleAbout,bg =  "Purple" )
+        imgAboutTitle.image = renderTitleAbout
+        imgAboutTitle.pack()
+
+	imgTitleTeam = Image.open("groupImageInfo.gif")
+	renderImageTeam = ImageTk.PhotoImage(imgTitleTeam)
+
+	imgTeam = Label(AboutWin, image=renderImageTeam,bg =  "Purple" )
+	imgTeam.image = renderImageTeam
+	imgTeam.place(x=100,y=130)
+
 
 #creates main menu  buttons
 button = Button(root, image=renderExit, command=closewindow, bg="Purple")

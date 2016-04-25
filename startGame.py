@@ -6,6 +6,8 @@ import Tkinter
 from Tkinter import *
 import ChooseCat
 import loadArray
+from PIL import Image, ImageTk
+
 
 #stores information saved from entry boxes
 info = []
@@ -26,43 +28,110 @@ info = []
 #team2Score=0
 
 
+
+
 def mainStart():
 	# initialize window size, title
-	root = Tk()
-	root.minsize(1780,1080)
-	root.configure(bg =  "Purple" )
+	start = Toplevel()
+	start.minsize(1780,1080)
+	start.configure(bg =  "Purple" )
+
 	myvar = StringVar()
-	root.title('It is time to make our teams!')
-	
+
+	#setting window name
+	start.title('It is time to make our teams!')
+
+	#Team Title 
+	imgTeamT = Image.open("TeamTitle.gif")
+	renderTeamT = ImageTk.PhotoImage(imgTeamT)
+	imgTitleT = Label(start, image=renderTeamT,bg =  "Purple" )
+	imgTitleT.image = renderTeamT
+	imgTitleT.pack()
+
+	Team1Title = Image.open("TeamOne.gif")
+        renderTeam1Title = ImageTk.PhotoImage(Team1Title)
+        imgTeam1Title = Label(start, image=renderTeam1Title,bg =  "Purple" )
+        imgTeam1Title.image = renderTeam1Title
+        imgTeam1Title.place(x=250,y=200)
+
 	#team 1 enters team name
-	Label(root, text='Team 1 enter your team name:', bg = "Purple", font=("Georgia", 17)).pack(side=TOP,padx=10,pady=10)
-	team1Entry = Entry(root, width=10, textvariable=myvar)
-	team1Entry.pack(side=TOP,padx=10,pady=10)
+	Team1 = Image.open("EnterTeamBlue.gif")
+        renderTeam1 = ImageTk.PhotoImage(Team1)
+        imgTeam1 = Label(start, image=renderTeam1,bg =  "Purple" )
+        imgTeam1.image = renderTeam1
+        imgTeam1.place(x=100,y=300)
+
+
+	team1Entry = Entry(start, width=30,font=("Helvetica",30), textvariable=myvar)
+	team1Entry.place(x=100,y=380)
 	
+
 	#team 1 player 1 enters own name
-	Label(root, text='Team 1: Player 1 enter your name:', bg = "Purple", font=("Georgia", 17) ).pack(side=TOP,padx=10,pady=10)
-	t1player1Entry = Entry(root, width=10)
-	t1player1Entry.pack(side=TOP,padx=10,pady=10)
+	Team1Player1 = Image.open("Player1Green.gif")
+        renderTeam1Player1 = ImageTk.PhotoImage(Team1Player1)
+
+        imgTeam1Player1 = Label(start, image=renderTeam1Player1,bg =  "Purple" )
+        imgTeam1Player1.image = renderTeam1Player1
+        imgTeam1Player1.place(x=100,y=450)
+
+	t1player1Entry = Entry(start, width=30,font=("Helvetica",30))
+	t1player1Entry.place(x=100,y=530)
+
 
 	#team 1 player 2 enters own name
-	Label(root, text='Team 1: Player 2 enter your name:', bg = "Purple", font=("Georgia", 17)).pack(side=TOP,padx=10,pady=10)
-	t1player2Entry = Entry(root, width=10)
-	t1player2Entry.pack(side=TOP,padx=10,pady=10)
+	Team1Player2 = Image.open("Player2Pink.gif")
+        renderTeam1Player2 = ImageTk.PhotoImage(Team1Player2)
+
+	imgTeam1Player2 = Label(start, image=renderTeam1Player2,bg =  "Purple" )
+        imgTeam1Player2.image = renderTeam1Player2
+        imgTeam1Player2.place(x=100,y=600)
+
+        t1player2Entry = Entry(start, width=30,font=("Helvetica",30))
+        t1player2Entry.place(x=100,y=680)
+
+
+	#Team 2 Title
+	Team2Title = Image.open("TeamTwo.gif")
+        renderTeam2Title = ImageTk.PhotoImage(Team2Title)
+        imgTeam2Title = Label(start, image=renderTeam2Title,bg =  "Purple" )
+        imgTeam2Title.image = renderTeam1Title
+        imgTeam2Title.place(x=1250,y=200)
+
 
 	#team 2 enters name
-	Label(root, text='Team 2 enter your team name:', bg = "Purple", font=("Georgia", 17)).pack(side=TOP,padx=10,pady=10)
-	team2Entry = Entry(root, width=10)
-	team2Entry.pack(side=TOP,padx=10,pady=10)
+	Team2 = Image.open("EnterTeamYellow.gif")
+        renderTeam2 = ImageTk.PhotoImage(Team2)
+
+        imgTeam2 = Label(start, image=renderTeam2,bg =  "Purple" )
+        imgTeam2.image = renderTeam2
+        imgTeam2.place(x=1050,y=300)
+
+	team2Entry = Entry(start, width=30,font=("Helvetica",30))
+	team2Entry.place(x=1050,y=380)
+
 
 	#team 2 player 1 enters own name
-	Label(root, text='Team 2: Player 1 enter your name:', bg = "Purple", font=("Georgia", 17)).pack(side=TOP,padx=10,pady=10)
-	t2player1Entry = Entry(root, width=10)
-	t2player1Entry.pack(side=TOP,padx=10,pady=10)
+	Team2Player1 = Image.open("Player1Blue.gif")
+        renderTeam2Player1 = ImageTk.PhotoImage(Team2Player1)
+
+        imgTeam2Player1 = Label(start, image=renderTeam2Player1,bg =  "Purple" )
+        imgTeam2Player1.image = renderTeam2Player1
+        imgTeam2Player1.place(x=1050,y=450)
+
+	t2player1Entry = Entry(start, width=30,font=("Helvetica",30))
+	t2player1Entry.place(x=1050,y=530)
 
 	#team 2 player 2 enters own name
-	Label(root, text='Team 2: Player 2 enter your name:', bg = "Purple", font=("Georgia", 17)).pack(side=TOP,padx=10,pady=10)
-	t2player2Entry = Entry(root, width=10)
-	t2player2Entry.pack(side=TOP,padx=10,pady=10)
+	Team2Player2 = Image.open("Player2Orange.gif")
+        renderTeam2Player2 = ImageTk.PhotoImage(Team2Player2)
+
+        imgTeam2Player2 = Label(start, image=renderTeam2Player2,bg =  "Purple" )
+        imgTeam2Player2.image = renderTeam2Player2
+        imgTeam2Player2.place(x=1050,y=600)
+
+	t2player2Entry = Entry(start, width=30,font=("Helvetica",30))
+	t2player2Entry.place(x=1050,y=680)
+
 
 	#is called when Ready to Play button is pressed
 	def SaveInfo():
@@ -92,11 +161,18 @@ def mainStart():
 		loadArray.arrayFour()
 		ChooseCat.select()
 	
-	#Ready to Play button
-	Button(root, text='READY TO PLAY', command = SaveInfo).pack()
-	
 
-	root.mainloop()
+	imgButtonR = Image.open("readyToPlayButton.gif")
+	renderReady = ImageTk.PhotoImage(imgButtonR)
+
+	#Ready to Play button
+	ReadyButton=Button(start, image=renderReady, command = SaveInfo,bg="Purple")
+	ReadyButton.config(height=180, width=380)	
+	ReadyButton.place(x=710, y=760)
+
+	
+	#display window on screen
+	start.mainloop()
 
 
 if __name__ == "__main__":
