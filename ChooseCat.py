@@ -70,7 +70,7 @@ def select():
 # if category is empty, game automatically shuts down
 def selectCat1() :
     array = []
-    if(os.stat("category1.txt").st_size==0):
+    if(os.stat("Categories/category1.txt").st_size==0):
         tkMessageBox.showinfo("Error", "Empty category file. Game will now shutdown.")
 	os.system("./killAllPython.sh")
     else:
@@ -95,7 +95,7 @@ def selectCat1() :
 
 def selectCat2() :
     array = []
-    if(os.stat("category2.txt").st_size==0):
+    if(os.stat("Categories/category2.txt").st_size==0):
         tkMessageBox.showinfo("Error", "Empty category file. Game will now shutdown.")
         os.system("./killAllPython.sh")
     else:
@@ -120,7 +120,7 @@ def selectCat2() :
 	
 def selectCat3() :
     array = []
-    if(os.stat("category3.txt").st_size==0):
+    if(os.stat("Categories/category3.txt").st_size==0):
         tkMessageBox.showinfo("Error", "Empty category file. Game will now shutdown.")
         os.system("./killAllPython.sh")
     else:
@@ -145,7 +145,7 @@ def selectCat3() :
 	
 def selectCat4() :
     array = []
-    if(os.stat("category4.txt").st_size==0):
+    if(os.stat("Categories/category4.txt").st_size==0):
         tkMessageBox.showinfo("Error", "Empty category file. Game will now shutdown.")
         os.system("./killAllPython.sh")
     else:
