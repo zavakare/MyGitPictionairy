@@ -33,7 +33,7 @@ def main():
 	#window to display end of game, winner, and loser
 
 	#create blank window and set minimum size
-	Ending = Tk()
+	Ending = Toplevel()
 	Ending.minsize(1780, 1080)
 
 	#change background color
@@ -42,8 +42,13 @@ def main():
 	#set window title
 	Ending.title("Game Over")
 
+
+	imgGame = Image.open("allImages/GameOver.gif")
+	renderGame = ImageTk.PhotoImage(imgGame)
+
 	#create title text and default place on screen
-	title = Label(Ending, text='Game Over', font=("Verdana", 100), fg="Black", bg = "Purple")
+	title = Label(Ending, image=randerGame, bg = "Purple")
+	title.image = renderGame
 	title.pack()
 	whoWins()
 	if (team1Score > team2Score):
