@@ -3,6 +3,7 @@
 #window displays results of game after four rounds
 
 from Tkinter import *
+from PIL import Image, ImageTk
 
 # determines final score, winner/loser, and displays it
 def whoWins():
@@ -32,23 +33,15 @@ def whoWins():
 def main():
     #window to display end of game, winner, and loser
 
-<<<<<<< HEAD
-	#create blank window and set minimum size
-	Ending = Toplevel()
-	Ending.minsize(1780, 1080)
-=======
     #create blank window and set minimum size
-    Ending = Tk()
+    Ending = Toplevel()
     Ending.minsize(1780, 1080)
->>>>>>> 6eca500f5eb9034d832c2b98e486413505f64997
 
     #change background color
     Ending.configure(bg =  "Purple" )
 
     #set window title
     Ending.title("Game Over")
-
-<<<<<<< HEAD
 
 	imgGame = Image.open("allImages/GameOver.gif")
 	renderGame = ImageTk.PhotoImage(imgGame)
@@ -68,7 +61,7 @@ def main():
 	else:
 		teamsTie = Label(Ending, text='No one wins! It is a tie:/', font=("Helvetica", 100), fg="Black", bg="Purple")
                 teamsTie.pack()
-=======
+
     #create title text and default place on screen
     title = Label(Ending, text='Game Over', font=("Verdana", 100), fg="Black", bg = "Purple")
     title.pack()
@@ -83,8 +76,6 @@ def main():
     else:
         teamsTie = Label(Ending, text='No one wins! It is a tie:/', font=("Helvetica", 100), fg="Black", bg="Purple")
         teamsTie.pack()
->>>>>>> 6eca500f5eb9034d832c2b98e486413505f64997
-
 
     Ending.mainloop()
 
