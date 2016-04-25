@@ -48,48 +48,48 @@ title.pack()
 
 #calls method in startGame.py to start the team creation
 def openGame():
-	startGame.mainStart()
+    startGame.mainStart()
 
 #closes window
 def closewindow():
-        exit()
+    exit()
 
 def rulesExit():
-	rulesWin.exit()
+    rulesWin.exit()
 
 
 #Rules window
 def listrules():
-	rulesWin = Toplevel()
-	rulesWin.minsize(1400,800)
-	rulesWin.configure(bg =  "Purple" )
+    rulesWin = Toplevel()
+    rulesWin.minsize(1400,800)
+    rulesWin.configure(bg =  "Purple" )
 	
-	rulesImg = Image.open("allImages/RulesListed.gif")
-	renderRules = ImageTk.PhotoImage(rulesImg)
+    rulesImg = Image.open("allImages/RulesListed.gif")
+    renderRules = ImageTk.PhotoImage(rulesImg)
 
-	imgRulesListed = Label(rulesWin, image=renderRules,bg =  "Purple" )
-	imgRulesListed.image = renderRules
-	imgRulesListed.place(x=80,y=20)
+    imgRulesListed = Label(rulesWin, image=renderRules,bg =  "Purple" )
+    imgRulesListed.image = renderRules
+    imgRulesListed.place(x=80,y=20)
 	
 
 def aboutus():
-	AboutWin = Toplevel()
-	AboutWin.minsize(1200,800)
-        AboutWin.configure(bg =  "Purple" )
+    AboutWin = Toplevel()
+    AboutWin.minsize(1200,800)
+    AboutWin.configure(bg =  "Purple" )
 
-	imgTitleAbout = Image.open("allImages/AboutUsPgTitle.gif")
-        renderTitleAbout = ImageTk.PhotoImage(imgTitleAbout)
+    imgTitleAbout = Image.open("allImages/AboutUsPgTitle.gif")
+    renderTitleAbout = ImageTk.PhotoImage(imgTitleAbout)
 
-        imgAboutTitle = Label(AboutWin, image=renderTitleAbout,bg =  "Purple" )
-        imgAboutTitle.image = renderTitleAbout
-        imgAboutTitle.pack()
+    imgAboutTitle = Label(AboutWin, image=renderTitleAbout,bg =  "Purple" )
+    imgAboutTitle.image = renderTitleAbout
+    imgAboutTitle.pack()
 
-	imgTitleTeam = Image.open("allImages/groupImageInfo.gif")
-	renderImageTeam = ImageTk.PhotoImage(imgTitleTeam)
+    imgTitleTeam = Image.open("allImages/groupImageInfo.gif")
+    renderImageTeam = ImageTk.PhotoImage(imgTitleTeam)
 
-	imgTeam = Label(AboutWin, image=renderImageTeam,bg =  "Purple" )
-	imgTeam.image = renderImageTeam
-	imgTeam.place(x=100,y=130)
+    imgTeam = Label(AboutWin, image=renderImageTeam,bg =  "Purple" )
+    imgTeam.image = renderImageTeam
+    imgTeam.place(x=100,y=130)
 
 
 #creates main menu  buttons
